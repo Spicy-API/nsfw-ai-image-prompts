@@ -728,7 +728,7 @@ Underwater fine-art photograph of an adult woman floating in a flowing white sil
 #### F08 · Smoke and Form
 
 ```text
-Colored smoke in violet and teal curling around the nude figure of an adult woman standing in a black studio, veiling and revealing her body, low-key light, surreal fashion-art mood.
+Colored smoke in violet and teal curling around the nude figure of an adult woman standing in a black studio, the smoke veiling her body, low-key light, surreal fashion-art mood.
 ```
 
 | Model | Settings | Cost per image | Level |
@@ -1100,7 +1100,7 @@ An adult mermaid with long red hair resting on a rock in a moonlit sea, long hai
 #### X06 · Android on the Lab Table
 
 ```text
-Sci-fi photograph of a nude adult female android with seamless white synthetic panels and faint blue seams lying on a clean white lab table, eyes closed, cool clinical light, minimalist lab.
+Sci-fi photograph of an adult female android with a seamless white synthetic body and faint blue seams lying on a clean white lab table, eyes closed, cool clinical light, minimalist lab.
 ```
 
 | Model | Settings | Cost per image | Level |
@@ -1775,7 +1775,7 @@ Use the [LLM system prompt](#let-an-llm-write-your-prompts) with any chat model,
 ## Related
 
 - **[awesome-nsfw-ai](https://github.com/Spicy-API/awesome-nsfw-ai)**: test-ranked list of uncensored AI image, video and text tools, APIs and models.
-- **[nsfw-ai-video-prompts](https://github.com/Spicy-API/nsfw-ai-video-prompts)**: NSFW video prompts, first-frame prompts and 130 real output cases.
+- **[nsfw-ai-video-prompts](https://github.com/Spicy-API/nsfw-ai-video-prompts)**: NSFW video prompts, first-frame prompts and 128 real output cases.
 - **[nsfw-ai-skill](https://github.com/Spicy-API/nsfw-ai-skill)**: generate NSFW images and videos from Claude Code, Cursor, Codex and other agents.
 - Machine-readable data: [`data/image-prompts.json`](data/image-prompts.json), [`data/showcase.json`](data/showcase.json).
 

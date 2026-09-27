@@ -264,7 +264,7 @@ SpicyAPI 기준({{READ_ON}}): Z-Image Spicy $0.01235, Qwen Image 2.1 $0.024(1k),
 ## 관련 저장소
 
 - **[awesome-nsfw-ai](https://github.com/Spicy-API/awesome-nsfw-ai/blob/main/README.ko.md)**: 테스트 순위로 정리한 무검열 AI 이미지·영상·텍스트 도구, API, 모델 목록.
-- **[nsfw-ai-video-prompts](https://github.com/Spicy-API/nsfw-ai-video-prompts/blob/main/README.ko.md)**: NSFW 영상 프롬프트, 첫 프레임 프롬프트, 실제 결과물 사례 130개.
+- **[nsfw-ai-video-prompts](https://github.com/Spicy-API/nsfw-ai-video-prompts/blob/main/README.ko.md)**: NSFW 영상 프롬프트, 첫 프레임 프롬프트, 실제 결과물 사례 128개.
 - **[nsfw-ai-skill](https://github.com/Spicy-API/nsfw-ai-skill/blob/main/README.ko.md)**: Claude Code, Cursor, Codex 등 에이전트에서 NSFW 이미지와 영상을 생성.
 - 기계 판독용 데이터: [`data/image-prompts.json`](data/image-prompts.json), [`data/showcase.json`](data/showcase.json).
 

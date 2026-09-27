@@ -267,7 +267,7 @@ Utilisez le [prompt système pour LLM](#faire-écrire-vos-prompts-par-un-llm) av
 ## Voir aussi
 
 - **[awesome-nsfw-ai](https://github.com/Spicy-API/awesome-nsfw-ai/blob/main/README.fr.md)** : sélection d'outils, d'API et de modèles IA sans censure pour l'image, la vidéo et le texte, classés d'après des tests.
-- **[nsfw-ai-video-prompts](https://github.com/Spicy-API/nsfw-ai-video-prompts/blob/main/README.fr.md)** : prompts vidéo NSFW, prompts pour la première image et 130 résultats réels.
+- **[nsfw-ai-video-prompts](https://github.com/Spicy-API/nsfw-ai-video-prompts/blob/main/README.fr.md)** : prompts vidéo NSFW, prompts pour la première image et 128 résultats réels.
 - **[nsfw-ai-skill](https://github.com/Spicy-API/nsfw-ai-skill/blob/main/README.fr.md)** : générer des images et vidéos NSFW depuis Claude Code, Cursor, Codex et d'autres agents.
 - Données lisibles par machine : [`data/image-prompts.json`](data/image-prompts.json), [`data/showcase.json`](data/showcase.json).
 

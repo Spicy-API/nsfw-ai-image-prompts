@@ -263,7 +263,7 @@ Use the [LLM system prompt](#let-an-llm-write-your-prompts) with any chat model,
 ## Related
 
 - **[awesome-nsfw-ai](https://github.com/Spicy-API/awesome-nsfw-ai)**: test-ranked list of uncensored AI image, video and text tools, APIs and models.
-- **[nsfw-ai-video-prompts](https://github.com/Spicy-API/nsfw-ai-video-prompts)**: NSFW video prompts, first-frame prompts and 130 real output cases.
+- **[nsfw-ai-video-prompts](https://github.com/Spicy-API/nsfw-ai-video-prompts)**: NSFW video prompts, first-frame prompts and 128 real output cases.
 - **[nsfw-ai-skill](https://github.com/Spicy-API/nsfw-ai-skill)**: generate NSFW images and videos from Claude Code, Cursor, Codex and other agents.
 - Machine-readable data: [`data/image-prompts.json`](data/image-prompts.json), [`data/showcase.json`](data/showcase.json).
 

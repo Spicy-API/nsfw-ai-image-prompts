@@ -732,7 +732,7 @@ Underwater fine-art photograph of an adult woman floating in a flowing white sil
 #### F08 · Fumée et formes
 
 ```text
-Colored smoke in violet and teal curling around the nude figure of an adult woman standing in a black studio, veiling and revealing her body, low-key light, surreal fashion-art mood.
+Colored smoke in violet and teal curling around the nude figure of an adult woman standing in a black studio, the smoke veiling her body, low-key light, surreal fashion-art mood.
 ```
 
 | Modèle | Réglages | Coût par image | Niveau |
@@ -1104,7 +1104,7 @@ An adult mermaid with long red hair resting on a rock in a moonlit sea, long hai
 #### X06 · Androïde sur la table de laboratoire
 
 ```text
-Sci-fi photograph of a nude adult female android with seamless white synthetic panels and faint blue seams lying on a clean white lab table, eyes closed, cool clinical light, minimalist lab.
+Sci-fi photograph of an adult female android with a seamless white synthetic body and faint blue seams lying on a clean white lab table, eyes closed, cool clinical light, minimalist lab.
 ```
 
 | Modèle | Réglages | Coût par image | Niveau |
@@ -1779,7 +1779,7 @@ Utilisez le [prompt système pour LLM](#faire-écrire-vos-prompts-par-un-llm) av
 ## Voir aussi
 
 - **[awesome-nsfw-ai](https://github.com/Spicy-API/awesome-nsfw-ai/blob/main/README.fr.md)** : sélection d'outils, d'API et de modèles IA sans censure pour l'image, la vidéo et le texte, classés d'après des tests.
-- **[nsfw-ai-video-prompts](https://github.com/Spicy-API/nsfw-ai-video-prompts/blob/main/README.fr.md)** : prompts vidéo NSFW, prompts pour la première image et 130 résultats réels.
+- **[nsfw-ai-video-prompts](https://github.com/Spicy-API/nsfw-ai-video-prompts/blob/main/README.fr.md)** : prompts vidéo NSFW, prompts pour la première image et 128 résultats réels.
 - **[nsfw-ai-skill](https://github.com/Spicy-API/nsfw-ai-skill/blob/main/README.fr.md)** : générer des images et vidéos NSFW depuis Claude Code, Cursor, Codex et d'autres agents.
 - Données lisibles par machine : [`data/image-prompts.json`](data/image-prompts.json), [`data/showcase.json`](data/showcase.json).
 
