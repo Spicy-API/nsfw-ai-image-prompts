@@ -1,0 +1,154 @@
+{
+  "source": "https://api.spicyapi.ai/console/v1/catalog/models",
+  "read_on": "2026-09-27",
+  "note": "Prices are the listed tier for the given resolution. Re-check the model page before running jobs.",
+  "loras": {
+    "storybook": {
+      "name": "storybook-anime LoRA",
+      "page": "https://huggingface.co/neonforestmist/qwen-image-2512-storybook-anime-lora",
+      "path": "https://huggingface.co/neonforestmist/qwen-image-2512-storybook-anime-lora/resolve/main/qwen_image_2512_storybook_anime_lora.safetensors"
+    },
+    "watercolor": {
+      "name": "watercolor-anime LoRA",
+      "page": "https://huggingface.co/neonforestmist/qwen-image-2512-watercolor-anime-lora",
+      "path": "https://huggingface.co/neonforestmist/qwen-image-2512-watercolor-anime-lora/resolve/main/qwen_image_2512_watercolor_anime_lora.safetensors"
+    }
+  },
+  "models": {
+    "qwen21": {
+      "id": "alibaba/qwen-image-2.1/text-to-image",
+      "name": "Qwen Image 2.1",
+      "page": "qwen-image-2-1",
+      "prices": {
+        "1k": 0.024,
+        "1.5k": 0.048,
+        "2k": 0.048
+      },
+      "aspect_ratios": [
+        "1:1",
+        "16:9",
+        "9:16",
+        "4:3",
+        "3:4",
+        "3:2",
+        "2:3",
+        "21:9",
+        "9:21",
+        "2:1",
+        "1:2",
+        "3:1",
+        "1:3",
+        "5:4",
+        "4:5"
+      ]
+    },
+    "qwen21lora": {
+      "id": "alibaba/qwen-image-2.1-lora/text-to-image",
+      "name": "Qwen Image 2.1 LoRA",
+      "page": "qwen-image-2-1-lora",
+      "prices": {
+        "1k": 0.03,
+        "1.5k": 0.054,
+        "2k": 0.102
+      },
+      "aspect_ratios": [
+        "1:1",
+        "16:9",
+        "9:16",
+        "4:3",
+        "3:4",
+        "3:2",
+        "2:3",
+        "21:9",
+        "9:21",
+        "2:1",
+        "1:2",
+        "3:1",
+        "1:3",
+        "5:4",
+        "4:5"
+      ]
+    },
+    "qwen21edit": {
+      "id": "alibaba/qwen-image-2.1/edit",
+      "name": "Qwen Image 2.1 Edit",
+      "page": "qwen-image-2-1",
+      "prices": {
+        "1k": 0.036,
+        "1.5k": 0.072,
+        "2k": 0.048
+      },
+      "aspect_ratios": [
+        "1:1",
+        "16:9",
+        "9:16",
+        "4:3",
+        "3:4",
+        "3:2",
+        "2:3",
+        "21:9",
+        "9:21",
+        "2:1",
+        "1:2",
+        "3:1",
+        "1:3",
+        "5:4",
+        "4:5"
+      ],
+      "edit": true
+    },
+    "seedream5pro": {
+      "id": "bytedance/seedream-5.0-pro/text-to-image",
+      "name": "Seedream 5.0 Pro",
+      "page": "seedream-5-0-pro",
+      "prices": {
+        "1k": 0.036,
+        "2k": 0.072
+      },
+      "aspect_ratios": [
+        "1:1",
+        "4:3",
+        "3:4",
+        "16:9",
+        "9:16",
+        "3:2",
+        "2:3",
+        "4:5",
+        "5:4",
+        "21:9",
+        "9:21",
+        "2:1",
+        "1:2",
+        "3:1",
+        "1:3"
+      ]
+    },
+    "qwen30pro": {
+      "id": "alibaba/qwen-image-3.0-pro/text-to-image",
+      "name": "Qwen Image 3.0 Pro",
+      "page": "qwen-image-3-0-pro",
+      "prices": {
+        "1k": 0.04,
+        "2k": 0.075
+      },
+      "aspect_ratios": [
+        "1:1",
+        "16:9",
+        "9:16",
+        "4:3",
+        "3:4",
+        "3:2",
+        "2:3",
+        "21:9"
+      ]
+    },
+    "zimg": {
+      "id": "alibaba/z-image-spicy/text-to-image",
+      "name": "Z-Image Spicy",
+      "page": "z-image-spicy",
+      "per_image": 0.01235,
+      "max_side": 1536,
+      "spicy": true
+    }
+  }
+}

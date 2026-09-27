@@ -1,0 +1,503 @@
+{
+ "_note": "Translate every string value. Keep keys, IDs, model names, numbers, units and markdown. Prompt text is not in this file and stays English.",
+ "labels": {
+  "col_model": "Model",
+  "col_type": "Type",
+  "col_tasks": "Tasks",
+  "col_from": "From",
+  "image_unit": "image",
+  "standard": "Standard",
+  "spicy_edition": "🌶️ Spicy edition",
+  "standard_unrestricted": "Standard model, catalog tier: unrestricted",
+  "model_page": "model page",
+  "preview_hidden": "Preview not shown on GitHub.",
+  "see_on_site": "See it on spicyapi.ai",
+  "input_images": "Input image(s)",
+  "col_settings": "Settings",
+  "col_cost": "Cost per image",
+  "col_level": "Level",
+  "input": "Input",
+  "tip": "Tip",
+  "colon": ":",
+  "levels": {
+   "Beginner": "Beginner",
+   "Intermediate": "Intermediate",
+   "Advanced": "Advanced"
+  }
+ },
+ "categories": {
+  "boudoir": {
+   "title": "Boudoir & Bedroom",
+   "intro": "Soft light, one adult subject, a bed or chair, lingerie or a robe. The most forgiving NSFW category: start here to learn how a model handles skin, fabric and light."
+  },
+  "lingerie": {
+   "title": "Lingerie & Fashion Editorial",
+   "intro": "Magazine-grade lingerie and swimwear shots. Name the fabric, the light and the lens; editorial language lifts the whole image."
+  },
+  "fineart": {
+   "title": "Artistic Nude & Figure Study",
+   "intro": "Nudity treated as art: sculpted light, silhouettes, classical poses, painterly styles. Shadows and composition do the censoring, so these also survive stricter platforms."
+  },
+  "couples": {
+   "title": "Couples & Intimacy",
+   "intro": "Two consenting adults. Give each person a distinct outfit or color, describe where each one is, and keep the pose simple so bodies don't merge."
+  },
+  "creator": {
+   "title": "Creator Content & Selfies",
+   "intro": "Phone-camera looks for adult creators: mirror selfies, ring light, casual bedroom and gym shots. Realism comes from imperfection: slight grain, mixed light, everyday rooms."
+  },
+  "fantasy": {
+   "title": "Fantasy, Sci-Fi & Cosplay",
+   "intro": "Adult fantasy characters and cosplay. Costume materials and one magical or tech element carry the image; keep every character explicitly adult."
+  },
+  "anime": {
+   "title": "Anime & Illustration (Qwen Image 2.1 LoRA)",
+   "intro": "Anime, hentai-style and illustrated stills using Qwen Image 2.1 LoRA with open anime LoRAs. Every character is an adult design with adult proportions. Start the prompt with the LoRA's style phrase."
+  },
+  "male": {
+   "title": "Male Boudoir & Fitness",
+   "intro": "Adult men: boudoir, fitness, editorial. The same rules apply: one clear pose, named light, a real setting."
+  },
+  "poster": {
+   "title": "Covers, Posters & Lettering",
+   "intro": "Adult magazine covers, calendar pages and posters where the text has to read correctly. Put the exact words in quotes and say where they go."
+  },
+  "edit": {
+   "title": "Uncensored Image Editing Prompts",
+   "intro": "Instructions for Qwen Image 2.1 Edit: change an outfit, relight, move the scene, restyle, or build a consistent series from reference images. Only edit images of yourself, of consenting adults, or of fictional characters you generated. Never 'undress' a photo of a real person."
+  }
+ },
+ "prompts": {
+  "B01": {
+   "title": "Window-Light Lace",
+   "tip": "Naming the window side gives consistent shadows. \"Natural skin texture\" avoids the plastic look."
+  },
+  "B02": {
+   "title": "Silk Robe at the Vanity",
+   "tip": "Mirrors are a strength of Qwen Image 2.1; describe what the reflection shows if it matters."
+  },
+  "B03": {
+   "title": "Red Satin Recline",
+   "tip": "Two-color lighting (warm key, cool fill) instantly looks professional."
+  },
+  "B04": {
+   "title": "Morning Sheets",
+   "tip": "Pastel, overexposed morning light reads intimate without being explicit."
+  },
+  "B05": {
+   "title": "Slatted Light",
+   "tip": "Hard patterned light (blinds, lace shadows) adds drama and hides skin imperfections."
+  },
+  "B06": {
+   "title": "Stockings and Heels",
+   "tip": "Seated poses keep hands and legs in natural positions."
+  },
+  "B07": {
+   "title": "Candlelit Chaise",
+   "tip": "A single low light source from the floor is flattering and moody."
+  },
+  "B08": {
+   "title": "Oversized Shirt",
+   "tip": "Everyday props (coffee, book) make boudoir feel natural."
+  },
+  "B09": {
+   "title": "Fur Rug by the Fire",
+   "tip": "Firelight as the only source gives instant warmth; mention the fireplace in frame."
+  },
+  "B10": {
+   "title": "Rain on the Window",
+   "tip": "Cool light plus a warm skin tone is an easy, cinematic contrast."
+  },
+  "B11": {
+   "title": "Hotel Door Hanger",
+   "tip": "Qwen Image 2.1 renders short text well; put the exact words in quotes."
+  },
+  "B12": {
+   "title": "Bathrobe Lean",
+   "tip": "Z-Image Spicy is the cheapest option for quick drafts; re-render keepers on Qwen Image 2.1."
+  },
+  "B13": {
+   "title": "Blindfold Portrait",
+   "tip": "Black and white hides color casts and looks timeless."
+  },
+  "B14": {
+   "title": "Balcony at Dusk",
+   "tip": "Backlight plus sheer fabric is suggestive without explicit detail."
+  },
+  "B15": {
+   "title": "Mirror Getting Ready",
+   "tip": "Describe both the subject and the reflection so the mirror stays consistent."
+  },
+  "L01": {
+   "title": "Parisian Apartment Catalog",
+   "tip": "Seedream 5.0 Pro gives the most \"photographed\" finish for campaign-style shots."
+  },
+  "L02": {
+   "title": "Studio Cyclorama",
+   "tip": "Catalog shots need even light and a neutral pose; say \"sharp fabric detail\"."
+  },
+  "L03": {
+   "title": "Swimwear Poolside",
+   "tip": "Hard midday sun gives crisp, glossy skin highlights."
+  },
+  "L04": {
+   "title": "Corset Detail",
+   "tip": "Detail shots (hands, fabric) are the easiest way to get flawless anatomy."
+  },
+  "L05": {
+   "title": "Neon Latex",
+   "tip": "Latex and neon reflections are high-impact; name both colors."
+  },
+  "L06": {
+   "title": "Fur Coat Corridor",
+   "tip": "An outer layer worn open frames the lingerie and adds a story."
+  },
+  "L07": {
+   "title": "Pearls and Satin",
+   "tip": "Macro framing avoids hands and faces entirely."
+  },
+  "L08": {
+   "title": "Garter Product Still",
+   "tip": "Cropped product framing is brand-safe and sells the item."
+  },
+  "L09": {
+   "title": "Sheer Robe Backlight",
+   "tip": "Backlit sheer fabric is suggestive and elegant."
+  },
+  "L10": {
+   "title": "Vintage Pin-Up Set",
+   "tip": "Era cues (Kodachrome, victory rolls) steer the whole look."
+  },
+  "F01": {
+   "title": "Classical Venus",
+   "tip": "Art-historical poses give the model a strong composition to follow."
+  },
+  "F02": {
+   "title": "Shadow Blinds Torso",
+   "tip": "Faces out of frame plus hard light = artful and platform-friendly."
+  },
+  "F03": {
+   "title": "Silhouette at Sunset",
+   "tip": "Silhouettes read as nude without showing anything."
+  },
+  "F04": {
+   "title": "Male Figure Study",
+   "tip": "Single-source top light sculpts muscle definition."
+  },
+  "F05": {
+   "title": "Gold Body Paint",
+   "tip": "Liquid metallics on skin look expensive and are hard for other models."
+  },
+  "F06": {
+   "title": "Forest Nymph",
+   "tip": "Foreground foliage doubles as natural censoring."
+  },
+  "F07": {
+   "title": "Underwater Silk",
+   "tip": "Say \"underwater\" early; fabric physics sells it."
+  },
+  "F08": {
+   "title": "Smoke and Form",
+   "tip": "Smoke gives built-in modesty and depth."
+  },
+  "F09": {
+   "title": "Milk Bath Overhead",
+   "tip": "The opaque milk surface controls exposure and modesty."
+  },
+  "F10": {
+   "title": "Oil Painting Odalisque",
+   "tip": "Painterly styles are a safe way to publish nudes; Qwen Image 3.0 Pro holds the brushwork well."
+  },
+  "F11": {
+   "title": "Desert Dunes",
+   "tip": "Wide landscapes make the figure small and graphic."
+  },
+  "F12": {
+   "title": "Clay Sculpture Couple",
+   "tip": "Back-to-back keeps two bodies clearly separated."
+  },
+  "C01": {
+   "title": "Candlelit Embrace",
+   "tip": "Contrasting outfits (black vs white) keep the two people separate."
+  },
+  "C02": {
+   "title": "Under One Sheet",
+   "tip": "Describe exactly where each head and arm is."
+  },
+  "C03": {
+   "title": "Two Women on a Sofa",
+   "tip": "Distinct colors per person prevent identity blending."
+  },
+  "C04": {
+   "title": "Neck Kiss",
+   "tip": "Behind-the-back staging keeps faces apart and readable."
+  },
+  "C05": {
+   "title": "Bathtub for Two",
+   "tip": "Foam and steam handle modesty and continuity."
+  },
+  "C06": {
+   "title": "Rooftop Kiss",
+   "tip": "Hands on clothing (ties, collars) read clearly."
+  },
+  "C07": {
+   "title": "Shower Glass Silhouettes",
+   "tip": "Frosted glass censors and hides anatomy errors."
+  },
+  "C08": {
+   "title": "Dress Zipper",
+   "tip": "Tight framing on the action keeps two hands manageable."
+  },
+  "C09": {
+   "title": "Morning After Kitchen",
+   "tip": "Domestic settings make intimacy feel authentic."
+  },
+  "C10": {
+   "title": "Masquerade Couple",
+   "tip": "Masks hide face artifacts and add mystery."
+  },
+  "S01": {
+   "title": "Mirror Selfie",
+   "tip": "Mention the phone in hand and slight grain for a believable selfie."
+  },
+  "S02": {
+   "title": "Ring-Light Bedroom",
+   "tip": "Ring-light catchlights instantly say 'creator content'."
+  },
+  "S03": {
+   "title": "Gym Mirror",
+   "tip": "Harsh fluorescent light is more believable than perfect studio light."
+  },
+  "S04": {
+   "title": "Hotel Room POV",
+   "tip": "POV framing avoids faces and feels personal."
+  },
+  "S05": {
+   "title": "Bath Selfie",
+   "tip": "Foam keeps it platform-safe for teasers."
+  },
+  "S06": {
+   "title": "Car Seat Tease",
+   "tip": "Mixed practical light (dashboard, streetlights) reads authentic."
+  },
+  "S07": {
+   "title": "Poolside Lounger",
+   "tip": "Z-Image Spicy is cheap enough to generate many variations for a feed."
+  },
+  "S08": {
+   "title": "Behind the Scenes",
+   "tip": "BTS framing makes imperfections look intentional."
+  },
+  "S09": {
+   "title": "Fire Escape Evening",
+   "tip": "Urban settings add story to creator sets."
+  },
+  "S10": {
+   "title": "Teaser Crop",
+   "tip": "Teaser crops work on stricter social platforms and drive clicks."
+  },
+  "X01": {
+   "title": "Dark Elf Sorceress",
+   "tip": "One magic effect at a time keeps the image readable."
+  },
+  "X02": {
+   "title": "Succubus Chamber",
+   "tip": "Name horns, wings and tail explicitly or the model may drop one."
+  },
+  "X03": {
+   "title": "Vampire Countess",
+   "tip": "Gothic interiors and candlelight are Seedream's sweet spot."
+  },
+  "X04": {
+   "title": "Cyberpunk Dancer",
+   "tip": "Light-emitting details look great and hide skin detail."
+  },
+  "X05": {
+   "title": "Mermaid on the Rocks",
+   "tip": "Long hair is the classic natural crop."
+  },
+  "X06": {
+   "title": "Android on the Lab Table",
+   "tip": "Synthetic skin panels read sci-fi and sidestep realism problems."
+  },
+  "X07": {
+   "title": "Warrior Queen",
+   "tip": "A cape in the wind adds motion to a still."
+  },
+  "X08": {
+   "title": "Catsuit Cosplay",
+   "tip": "State the age and 'adult cosplayer' for every cosplay prompt."
+  },
+  "X09": {
+   "title": "Goddess of Spring",
+   "tip": "Vines and petals are soft natural coverage."
+  },
+  "X10": {
+   "title": "Space Station Pin-Up",
+   "tip": "Zero gravity explains any odd pose."
+  },
+  "A01": {
+   "title": "Onsen Night",
+   "tip": "Start with the LoRA's style phrase (\"storybook anime illustration of\")."
+  },
+  "A02": {
+   "title": "Attic Morning",
+   "tip": "This is close to SpicyAPI's own tested anime-boudoir example."
+  },
+  "A03": {
+   "title": "Watercolor Lace",
+   "tip": "Watercolor washes soften skin and look premium."
+  },
+  "A04": {
+   "title": "Demon Queen",
+   "tip": "Adult faces and proportions: write 'adult' and give her a mature expression."
+  },
+  "A05": {
+   "title": "Beach Run",
+   "tip": "Dynamic poses work better in illustration than in photoreal."
+  },
+  "A06": {
+   "title": "Silver-Hair Bedroom",
+   "tip": "Cozy interiors give anime scenes depth."
+  },
+  "A07": {
+   "title": "Neon Rooftop",
+   "tip": "Rain and neon look great in watercolor."
+  },
+  "A08": {
+   "title": "Bath at Dusk",
+   "tip": "From-behind framing keeps illustrated nudity tasteful."
+  },
+  "A09": {
+   "title": "Succubus Window",
+   "tip": "Say 'adult' before every fantasy creature too."
+  },
+  "A10": {
+   "title": "Two-Style Stack",
+   "tip": "Stack two LoRAs: watercolor at 0.9 and storybook at 0.45, as in SpicyAPI's own two-weights example."
+  },
+  "M01": {
+   "title": "Male Boudoir Sheets",
+   "tip": "Soft light works for men too; avoid over-sharpening muscles."
+  },
+  "M02": {
+   "title": "Studded Leather",
+   "tip": "A single hard side light defines muscles cleanly."
+  },
+  "M03": {
+   "title": "Shower Steam",
+   "tip": "Waist crops keep male nudes platform-friendly."
+  },
+  "M04": {
+   "title": "Boxer After the Round",
+   "tip": "Sweat and hard light sell the fitness look."
+  },
+  "M05": {
+   "title": "Beach Sunset",
+   "tip": "Golden-hour backlight flatters every skin tone."
+  },
+  "M06": {
+   "title": "Silk Robe Hotel",
+   "tip": "Props give the hands something natural to do."
+  },
+  "P01": {
+   "title": "Magazine Cover",
+   "tip": "Qwen Image 3.0 Pro renders lettering most reliably; quote every word."
+  },
+  "P02": {
+   "title": "Pin-Up Calendar Page",
+   "tip": "Say where each piece of text goes."
+  },
+  "P03": {
+   "title": "Perfume Ad",
+   "tip": "Thin serif fonts look premium; name the style."
+  },
+  "P04": {
+   "title": "Fogged Mirror Message",
+   "tip": "Text in the scene (on a mirror, a sign) feels natural and shareable."
+  },
+  "P05": {
+   "title": "Burlesque Poster",
+   "tip": "Art deco borders frame the text nicely."
+  },
+  "P06": {
+   "title": "Neon Motel Sign",
+   "tip": "Qwen Image 2.1 handles one short word of signage well."
+  },
+  "E01": {
+   "title": "Outfit Swap",
+   "tip": "Always list what must stay the same; the model keeps what you name.",
+   "input": "One photo of yourself, a consenting adult, or a generated character."
+  },
+  "E02": {
+   "title": "Relight to Candlelight",
+   "tip": "Relighting is the most reliable edit and changes the mood completely.",
+   "input": "A daytime bedroom or boudoir photo."
+  },
+  "E03": {
+   "title": "New Location",
+   "tip": "Refer to references as 'image 1', 'image 2' in order.",
+   "input": "Image 1: the subject. Image 2: a photo of the location."
+  },
+  "E04": {
+   "title": "Same Character, New Scene",
+   "tip": "More references of one character = stronger identity lock.",
+   "input": "Two or three images of the same generated character."
+  },
+  "E05": {
+   "title": "Photo to Anime",
+   "tip": "For a stronger style, use Qwen Image 2.1 LoRA edit with an anime edit LoRA.",
+   "input": "A generated boudoir image."
+  },
+  "E06": {
+   "title": "Day to Night",
+   "tip": "Time-of-day changes are a cheap way to build a series.",
+   "input": "Any interior photo with a window."
+  },
+  "E07": {
+   "title": "Next Scene",
+   "tip": "Say 'exactly the same two people' and 'no other figures' to avoid extra people.",
+   "input": "A generated image of an adult couple in bed."
+  },
+  "E08": {
+   "title": "Add Water and Steam",
+   "tip": "Adding atmosphere is safer than changing the body.",
+   "input": "A studio portrait."
+  },
+  "E09": {
+   "title": "Change the Fabric",
+   "tip": "Material swaps keep the silhouette and change the vibe.",
+   "input": "A lingerie or dress photo."
+  },
+  "E10": {
+   "title": "Background Blur Studio",
+   "tip": "Turns phone shots into studio shots.",
+   "input": "A casual home photo."
+  },
+  "E11": {
+   "title": "Black and White Fine Art",
+   "tip": "The quickest way to make a set look cohesive.",
+   "input": "Any boudoir photo."
+  },
+  "E12": {
+   "title": "Extend to Vertical",
+   "tip": "Set aspect_ratio to 9:16 for stories and reels covers.",
+   "input": "A square or horizontal image."
+  },
+  "E13": {
+   "title": "Accessories",
+   "tip": "Small additions are the most reliable edits.",
+   "input": "A portrait."
+  },
+  "E14": {
+   "title": "Season Change",
+   "tip": "Build seasonal content from one shoot.",
+   "input": "An outdoor photo."
+  },
+  "E15": {
+   "title": "Group to Solo",
+   "tip": "Removing people is easier than adding them.",
+   "input": "A generated photo with several people."
+  }
+ }
+}

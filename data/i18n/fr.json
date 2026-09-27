@@ -1,0 +1,503 @@
+{
+ "_note": "Traduire chaque valeur de chaîne. Conserver les clés, les ID, les noms de modèles, les nombres, les unités et le markdown. Le texte des prompts ne figure pas dans ce fichier et reste en anglais.",
+ "labels": {
+  "col_model": "Modèle",
+  "col_type": "Type",
+  "col_tasks": "Tâches",
+  "col_from": "À partir de",
+  "image_unit": "image",
+  "standard": "Standard",
+  "spicy_edition": "🌶️ Édition Spicy",
+  "standard_unrestricted": "Modèle standard, niveau catalogue : unrestricted",
+  "model_page": "page du modèle",
+  "preview_hidden": "Aperçu non affiché sur GitHub.",
+  "see_on_site": "Voir sur spicyapi.ai",
+  "input_images": "Image(s) d'entrée",
+  "col_settings": "Réglages",
+  "col_cost": "Coût par image",
+  "col_level": "Niveau",
+  "input": "Entrée",
+  "tip": "Conseil",
+  "colon": " :",
+  "levels": {
+   "Beginner": "Débutant",
+   "Intermediate": "Intermédiaire",
+   "Advanced": "Avancé"
+  }
+ },
+ "categories": {
+  "boudoir": {
+   "title": "Boudoir & chambre",
+   "intro": "Lumière douce, un seul sujet adulte, un lit ou une chaise, de la lingerie ou un peignoir. La catégorie NSFW la plus indulgente : commencez ici pour voir comment un modèle gère la peau, le tissu et la lumière."
+  },
+  "lingerie": {
+   "title": "Lingerie & éditorial de mode",
+   "intro": "Des photos de lingerie et de maillots de bain dignes d'un magazine. Nommez le tissu, la lumière et l'objectif ; le vocabulaire éditorial élève toute l'image."
+  },
+  "fineart": {
+   "title": "Nu artistique & étude de nu",
+   "intro": "La nudité traitée comme de l'art : lumière sculptée, silhouettes, poses classiques, styles picturaux. Les ombres et la composition font office de censure, si bien que ces images passent aussi sur les plateformes aux règles plus strictes."
+  },
+  "couples": {
+   "title": "Couples & intimité",
+   "intro": "Deux adultes consentants. Donnez à chaque personne une tenue ou une couleur distincte, décrivez où se trouve chacune, et gardez une pose simple pour que les corps ne fusionnent pas."
+  },
+  "creator": {
+   "title": "Contenu de créateurs & selfies",
+   "intro": "Des rendus de photo prise au téléphone pour les créateurs adultes : selfies dans le miroir, ring light, photos décontractées dans la chambre ou à la salle de sport. Le réalisme vient des imperfections : léger grain, lumières mêlées, pièces du quotidien."
+  },
+  "fantasy": {
+   "title": "Fantasy, science-fiction & cosplay",
+   "intro": "Personnages de fantasy adultes et cosplay. Les matières du costume et un seul élément magique ou technologique portent l'image ; gardez chaque personnage explicitement adulte."
+  },
+  "anime": {
+   "title": "Anime & illustration (Qwen Image 2.1 LoRA)",
+   "intro": "Images anime, de style hentai et illustrées, avec Qwen Image 2.1 LoRA et des LoRA anime ouverts. Chaque personnage est conçu comme un adulte, avec des proportions d'adulte. Commencez le prompt par la phrase de style du LoRA."
+  },
+  "male": {
+   "title": "Boudoir masculin & fitness",
+   "intro": "Des hommes adultes : boudoir, fitness, éditorial. Les mêmes règles s'appliquent : une pose claire, une lumière nommée, un décor réel."
+  },
+  "poster": {
+   "title": "Couvertures, affiches & lettrage",
+   "intro": "Couvertures de magazines pour adultes, pages de calendrier et affiches dont le texte doit être lisible et correct. Mettez les mots exacts entre guillemets et dites où ils se placent."
+  },
+  "edit": {
+   "title": "Prompts de retouche d'image sans censure",
+   "intro": "Des instructions pour Qwen Image 2.1 Edit : changer une tenue, rééclairer, déplacer la scène, changer de style ou créer une série cohérente à partir d'images de référence. Ne retouchez que des images de vous-même, d'adultes consentants ou de personnages fictifs que vous avez générés. Ne « déshabillez » jamais la photo d'une personne réelle."
+  }
+ },
+ "prompts": {
+  "B01": {
+   "title": "Dentelle en lumière de fenêtre",
+   "tip": "Préciser de quel côté se trouve la fenêtre donne des ombres cohérentes. « Natural skin texture » évite le rendu plastique."
+  },
+  "B02": {
+   "title": "Peignoir de soie à la coiffeuse",
+   "tip": "Les miroirs sont un point fort de Qwen Image 2.1 ; décrivez ce que montre le reflet si c'est important."
+  },
+  "B03": {
+   "title": "Allongée sur du satin rouge",
+   "tip": "Un éclairage bicolore (lumière principale chaude, lumière d'appoint froide) donne tout de suite un rendu professionnel."
+  },
+  "B04": {
+   "title": "Draps du matin",
+   "tip": "Une lumière matinale pastel et surexposée paraît intime sans être explicite."
+  },
+  "B05": {
+   "title": "Lumière à travers les stores",
+   "tip": "Une lumière dure à motifs (stores, ombres de dentelle) ajoute du drame et masque les imperfections de la peau."
+  },
+  "B06": {
+   "title": "Bas et talons",
+   "tip": "Les poses assises gardent les mains et les jambes dans des positions naturelles."
+  },
+  "B07": {
+   "title": "Méridienne à la bougie",
+   "tip": "Une seule source de lumière basse, posée au sol, est flatteuse et crée l'ambiance."
+  },
+  "B08": {
+   "title": "Chemise trop grande",
+   "tip": "Des accessoires du quotidien (café, livre) rendent le boudoir naturel."
+  },
+  "B09": {
+   "title": "Tapis de fourrure au coin du feu",
+   "tip": "La lumière du feu comme unique source donne une chaleur immédiate ; mentionnez la cheminée dans le cadre."
+  },
+  "B10": {
+   "title": "Pluie sur la vitre",
+   "tip": "Une lumière froide avec une peau aux tons chauds crée un contraste cinématographique facile à obtenir."
+  },
+  "B11": {
+   "title": "Affichette de porte d'hôtel",
+   "tip": "Qwen Image 2.1 rend bien les textes courts ; mettez les mots exacts entre guillemets."
+  },
+  "B12": {
+   "title": "Appuyée en peignoir",
+   "tip": "Z-Image Spicy est l'option la moins chère pour des brouillons rapides ; refaites les meilleurs sur Qwen Image 2.1."
+  },
+  "B13": {
+   "title": "Portrait aux yeux bandés",
+   "tip": "Le noir et blanc masque les dominantes de couleur et donne un rendu intemporel."
+  },
+  "B14": {
+   "title": "Balcon au crépuscule",
+   "tip": "Un contre-jour sur un tissu transparent est suggestif sans détail explicite."
+  },
+  "B15": {
+   "title": "Préparatifs devant le miroir",
+   "tip": "Décrivez à la fois le sujet et son reflet pour que le miroir reste cohérent."
+  },
+  "L01": {
+   "title": "Catalogue dans un appartement parisien",
+   "tip": "Seedream 5.0 Pro donne le rendu le plus « photographié » pour les images de type campagne."
+  },
+  "L02": {
+   "title": "Cyclorama de studio",
+   "tip": "Les images de catalogue demandent une lumière uniforme et une pose neutre ; écrivez « sharp fabric detail »."
+  },
+  "L03": {
+   "title": "Maillot de bain au bord de la piscine",
+   "tip": "Le soleil dur de midi donne des reflets nets et brillants sur la peau."
+  },
+  "L04": {
+   "title": "Détail de corset",
+   "tip": "Les plans de détail (mains, tissu) sont le moyen le plus simple d'obtenir une anatomie sans défaut."
+  },
+  "L05": {
+   "title": "Latex et néons",
+   "tip": "Le latex et les reflets de néon ont un fort impact ; nommez les deux couleurs."
+  },
+  "L06": {
+   "title": "Manteau de fourrure dans un couloir",
+   "tip": "Une couche extérieure portée ouverte encadre la lingerie et raconte une histoire."
+  },
+  "L07": {
+   "title": "Perles et satin",
+   "tip": "Le cadrage macro évite complètement les mains et les visages."
+  },
+  "L08": {
+   "title": "Porte-jarretelles en photo produit",
+   "tip": "Un cadrage produit serré reste compatible avec les marques et met l'article en valeur."
+  },
+  "L09": {
+   "title": "Peignoir transparent en contre-jour",
+   "tip": "Un tissu transparent en contre-jour est suggestif et élégant."
+  },
+  "L10": {
+   "title": "Séance pin-up vintage",
+   "tip": "Les repères d'époque (Kodachrome, victory rolls) orientent tout le rendu."
+  },
+  "F01": {
+   "title": "Vénus classique",
+   "tip": "Les poses tirées de l'histoire de l'art donnent au modèle une composition forte à suivre."
+  },
+  "F02": {
+   "title": "Buste dans l'ombre des stores",
+   "tip": "Visage hors champ et lumière dure : un résultat artistique, bien accepté par les plateformes."
+  },
+  "F03": {
+   "title": "Silhouette au coucher du soleil",
+   "tip": "Les silhouettes se lisent comme des nus sans rien montrer."
+  },
+  "F04": {
+   "title": "Étude de nu masculin",
+   "tip": "Une lumière unique venant du dessus sculpte la définition musculaire."
+  },
+  "F05": {
+   "title": "Peinture dorée sur le corps",
+   "tip": "Les métallisés liquides sur la peau font luxueux et sont difficiles pour les autres modèles."
+  },
+  "F06": {
+   "title": "Nymphe de la forêt",
+   "tip": "Le feuillage au premier plan sert aussi de censure naturelle."
+  },
+  "F07": {
+   "title": "Soie sous l'eau",
+   "tip": "Écrivez « underwater » tôt dans le prompt ; c'est la physique du tissu qui rend l'image crédible."
+  },
+  "F08": {
+   "title": "Fumée et formes",
+   "tip": "La fumée apporte une pudeur intégrée et de la profondeur."
+  },
+  "F09": {
+   "title": "Bain de lait vu d'en haut",
+   "tip": "La surface opaque du lait contrôle l'exposition et la pudeur."
+  },
+  "F10": {
+   "title": "Odalisque à la peinture à l'huile",
+   "tip": "Les styles picturaux sont un moyen sûr de publier des nus ; Qwen Image 3.0 Pro rend bien les coups de pinceau."
+  },
+  "F11": {
+   "title": "Dunes du désert",
+   "tip": "Les grands paysages rendent la silhouette petite et graphique."
+  },
+  "F12": {
+   "title": "Couple en sculpture d'argile",
+   "tip": "Dos à dos, les deux corps restent clairement séparés."
+  },
+  "C01": {
+   "title": "Étreinte à la bougie",
+   "tip": "Des tenues contrastées (noir contre blanc) gardent les deux personnes bien distinctes."
+  },
+  "C02": {
+   "title": "Sous le même drap",
+   "tip": "Décrivez exactement où se trouvent chaque tête et chaque bras."
+  },
+  "C03": {
+   "title": "Deux femmes sur un canapé",
+   "tip": "Une couleur distincte par personne évite que les identités se mélangent."
+  },
+  "C04": {
+   "title": "Baiser dans le cou",
+   "tip": "Une mise en scène de dos garde les visages séparés et lisibles."
+  },
+  "C05": {
+   "title": "Bain à deux",
+   "tip": "La mousse et la vapeur assurent la pudeur et la continuité."
+  },
+  "C06": {
+   "title": "Baiser sur le toit",
+   "tip": "Les mains posées sur des vêtements (cravate, col) se lisent clairement."
+  },
+  "C07": {
+   "title": "Silhouettes derrière la vitre de douche",
+   "tip": "Le verre dépoli censure et cache les erreurs d'anatomie."
+  },
+  "C08": {
+   "title": "Fermeture éclair de la robe",
+   "tip": "Un cadrage serré sur l'action garde les deux mains maîtrisables."
+  },
+  "C09": {
+   "title": "Cuisine, le lendemain matin",
+   "tip": "Les décors domestiques rendent l'intimité authentique."
+  },
+  "C10": {
+   "title": "Couple au bal masqué",
+   "tip": "Les masques cachent les artefacts du visage et ajoutent du mystère."
+  },
+  "S01": {
+   "title": "Selfie dans le miroir",
+   "tip": "Mentionnez le téléphone en main et un léger grain pour un selfie crédible."
+  },
+  "S02": {
+   "title": "Chambre au ring light",
+   "tip": "Les reflets du ring light dans les yeux disent tout de suite « contenu de créateur »."
+  },
+  "S03": {
+   "title": "Miroir de salle de sport",
+   "tip": "Une lumière fluorescente crue est plus crédible qu'une lumière de studio parfaite."
+  },
+  "S04": {
+   "title": "Chambre d'hôtel en POV",
+   "tip": "Le cadrage POV évite les visages et paraît personnel."
+  },
+  "S05": {
+   "title": "Selfie dans le bain",
+   "tip": "La mousse garde l'image acceptable par les plateformes pour les teasers."
+  },
+  "S06": {
+   "title": "Teaser sur le siège de voiture",
+   "tip": "Des lumières d'ambiance mêlées (tableau de bord, lampadaires) paraissent authentiques."
+  },
+  "S07": {
+   "title": "Transat au bord de la piscine",
+   "tip": "Z-Image Spicy est assez bon marché pour générer de nombreuses variantes pour un fil."
+  },
+  "S08": {
+   "title": "Coulisses",
+   "tip": "Un cadrage façon coulisses fait paraître les imperfections volontaires."
+  },
+  "S09": {
+   "title": "Soirée sur l'escalier de secours",
+   "tip": "Les décors urbains ajoutent une histoire aux séries de créateurs."
+  },
+  "S10": {
+   "title": "Recadrage teaser",
+   "tip": "Les recadrages teaser passent sur les réseaux sociaux aux règles plus strictes et génèrent des clics."
+  },
+  "X01": {
+   "title": "Sorcière elfe noire",
+   "tip": "Un seul effet magique à la fois garde l'image lisible."
+  },
+  "X02": {
+   "title": "Salle de la succube",
+   "tip": "Nommez explicitement les cornes, les ailes et la queue, sinon le modèle risque d'en oublier une."
+  },
+  "X03": {
+   "title": "Comtesse vampire",
+   "tip": "Les intérieurs gothiques à la bougie sont le point fort de Seedream."
+  },
+  "X04": {
+   "title": "Danseuse cyberpunk",
+   "tip": "Les détails lumineux rendent très bien et masquent les détails de la peau."
+  },
+  "X05": {
+   "title": "Sirène sur les rochers",
+   "tip": "Les cheveux longs sont le cache naturel classique."
+  },
+  "X06": {
+   "title": "Androïde sur la table de laboratoire",
+   "tip": "Les panneaux de peau synthétique font science-fiction et contournent les problèmes de réalisme."
+  },
+  "X07": {
+   "title": "Reine guerrière",
+   "tip": "Une cape dans le vent ajoute du mouvement à une image fixe."
+  },
+  "X08": {
+   "title": "Cosplay en combinaison moulante",
+   "tip": "Indiquez l'âge et « adult cosplayer » dans chaque prompt de cosplay."
+  },
+  "X09": {
+   "title": "Déesse du printemps",
+   "tip": "Les lianes et les pétales offrent une couverture douce et naturelle."
+  },
+  "X10": {
+   "title": "Pin-up en station spatiale",
+   "tip": "L'apesanteur justifie n'importe quelle pose étrange."
+  },
+  "A01": {
+   "title": "Soirée au onsen",
+   "tip": "Commencez par la phrase de style du LoRA (« storybook anime illustration of »)."
+  },
+  "A02": {
+   "title": "Matin sous les combles",
+   "tip": "Ce prompt est proche de l'exemple anime boudoir testé par SpicyAPI lui-même."
+  },
+  "A03": {
+   "title": "Dentelle à l'aquarelle",
+   "tip": "Les lavis d'aquarelle adoucissent la peau et font haut de gamme."
+  },
+  "A04": {
+   "title": "Reine démon",
+   "tip": "Visage et proportions d'adulte : écrivez « adult » et donnez-lui une expression mûre."
+  },
+  "A05": {
+   "title": "Course sur la plage",
+   "tip": "Les poses dynamiques fonctionnent mieux en illustration qu'en photoréaliste."
+  },
+  "A06": {
+   "title": "Chambre, cheveux argentés",
+   "tip": "Les intérieurs douillets donnent de la profondeur aux scènes anime."
+  },
+  "A07": {
+   "title": "Toit au néon",
+   "tip": "La pluie et le néon rendent très bien à l'aquarelle."
+  },
+  "A08": {
+   "title": "Bain au crépuscule",
+   "tip": "Un cadrage de dos garde la nudité illustrée de bon goût."
+  },
+  "A09": {
+   "title": "Succube à la fenêtre",
+   "tip": "Écrivez « adult » devant chaque créature fantastique aussi."
+  },
+  "A10": {
+   "title": "Deux styles combinés",
+   "tip": "Combinez deux LoRA : aquarelle à 0.9 et storybook à 0.45, comme dans l'exemple à deux poids de SpicyAPI."
+  },
+  "M01": {
+   "title": "Boudoir masculin dans les draps",
+   "tip": "La lumière douce fonctionne aussi pour les hommes ; évitez de trop accentuer les muscles."
+  },
+  "M02": {
+   "title": "Cuir clouté",
+   "tip": "Une seule lumière latérale dure dessine nettement les muscles."
+  },
+  "M03": {
+   "title": "Vapeur de douche",
+   "tip": "Un cadrage à la taille garde les nus masculins acceptables par les plateformes."
+  },
+  "M04": {
+   "title": "Boxeur après le round",
+   "tip": "La sueur et la lumière dure font le rendu fitness."
+  },
+  "M05": {
+   "title": "Coucher de soleil sur la plage",
+   "tip": "Le contre-jour de l'heure dorée flatte toutes les carnations."
+  },
+  "M06": {
+   "title": "Peignoir de soie à l'hôtel",
+   "tip": "Les accessoires donnent aux mains quelque chose de naturel à faire."
+  },
+  "P01": {
+   "title": "Couverture de magazine",
+   "tip": "Qwen Image 3.0 Pro rend le lettrage de la façon la plus fiable ; mettez chaque mot entre guillemets."
+  },
+  "P02": {
+   "title": "Page de calendrier pin-up",
+   "tip": "Précisez où va chaque élément de texte."
+  },
+  "P03": {
+   "title": "Publicité pour un parfum",
+   "tip": "Les polices à empattements fines font haut de gamme ; nommez le style."
+  },
+  "P04": {
+   "title": "Message sur un miroir embué",
+   "tip": "Un texte dans la scène (sur un miroir, une enseigne) paraît naturel et se partage bien."
+  },
+  "P05": {
+   "title": "Affiche burlesque",
+   "tip": "Les bordures Art déco encadrent joliment le texte."
+  },
+  "P06": {
+   "title": "Enseigne néon de motel",
+   "tip": "Qwen Image 2.1 gère bien un seul mot court sur une enseigne."
+  },
+  "E01": {
+   "title": "Changer de tenue",
+   "tip": "Listez toujours ce qui doit rester identique ; le modèle garde ce que vous nommez.",
+   "input": "Une photo de vous-même, d'un adulte consentant ou d'un personnage généré."
+  },
+  "E02": {
+   "title": "Rééclairer à la bougie",
+   "tip": "Changer l'éclairage est la retouche la plus fiable, et elle transforme complètement l'ambiance.",
+   "input": "Une photo de chambre ou de boudoir prise de jour."
+  },
+  "E03": {
+   "title": "Nouveau lieu",
+   "tip": "Désignez les références par « image 1 », « image 2 », dans l'ordre.",
+   "input": "Image 1 : le sujet. Image 2 : une photo du lieu."
+  },
+  "E04": {
+   "title": "Même personnage, nouvelle scène",
+   "tip": "Plus il y a de références d'un même personnage, mieux son identité est verrouillée.",
+   "input": "Deux ou trois images du même personnage généré."
+  },
+  "E05": {
+   "title": "De la photo à l'anime",
+   "tip": "Pour un style plus marqué, utilisez la retouche Qwen Image 2.1 LoRA avec un LoRA de retouche anime.",
+   "input": "Une image boudoir générée."
+  },
+  "E06": {
+   "title": "Du jour à la nuit",
+   "tip": "Changer le moment de la journée est un moyen peu coûteux de construire une série.",
+   "input": "N'importe quelle photo d'intérieur avec une fenêtre."
+  },
+  "E07": {
+   "title": "Scène suivante",
+   "tip": "Écrivez « exactly the same two people » et « no other figures » pour éviter des personnes en plus.",
+   "input": "Une image générée d'un couple d'adultes au lit."
+  },
+  "E08": {
+   "title": "Ajouter de l'eau et de la vapeur",
+   "tip": "Ajouter de l'atmosphère est plus sûr que modifier le corps.",
+   "input": "Un portrait en studio."
+  },
+  "E09": {
+   "title": "Changer de tissu",
+   "tip": "Changer de matière garde la silhouette et change l'ambiance.",
+   "input": "Une photo de lingerie ou de robe."
+  },
+  "E10": {
+   "title": "Arrière-plan flou façon studio",
+   "tip": "Transforme des photos prises au téléphone en photos de studio.",
+   "input": "Une photo prise à la maison, sans mise en scène."
+  },
+  "E11": {
+   "title": "Noir et blanc artistique",
+   "tip": "Le moyen le plus rapide de donner de la cohérence à une série.",
+   "input": "N'importe quelle photo boudoir."
+  },
+  "E12": {
+   "title": "Étendre au format vertical",
+   "tip": "Réglez aspect_ratio sur 9:16 pour les couvertures de stories et de reels.",
+   "input": "Une image carrée ou horizontale."
+  },
+  "E13": {
+   "title": "Accessoires",
+   "tip": "Les petits ajouts sont les retouches les plus fiables.",
+   "input": "Un portrait."
+  },
+  "E14": {
+   "title": "Changement de saison",
+   "tip": "Créez du contenu saisonnier à partir d'une seule séance.",
+   "input": "Une photo en extérieur."
+  },
+  "E15": {
+   "title": "Du groupe au solo",
+   "tip": "Retirer des personnes est plus facile que d'en ajouter.",
+   "input": "Une photo générée avec plusieurs personnes."
+  }
+ }
+}

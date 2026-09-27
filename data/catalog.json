@@ -1,0 +1,5834 @@
+{
+ "source": "https://api.spicyapi.ai/console/v1/catalog/models",
+ "read_on": "2026-09-27",
+ "leaderboard": {
+  "methodology": "2.1",
+  "computed_at": "2026-09-27T01:39:20.340785Z"
+ },
+ "families": [
+  {
+   "name": "Seedance 2.5 Spicy",
+   "page": "seedance-2-5-spicy",
+   "provider": "ByteDance",
+   "modality": "video",
+   "spicy": true,
+   "sort": 145,
+   "endpoints": [
+    {
+     "model": "bytedance/seedance-2.5-spicy/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.216,
+     "unit": "per_second",
+     "variant": "generate_audio=false;resolution=480p",
+     "durations": [
+      4,
+      30
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "480p",
+      "720p",
+      "1080p",
+      "4k"
+     ],
+     "summary": "Uncensored image-to-video: hand it the opening frame and get 4–30 seconds back, native to 1080p with an upscaled 4K tier on top.",
+     "examples": [
+      "onsen-two-rise",
+      "steam-glass-handprint",
+      "hotel-window-turn",
+      "pov-hand-pull",
+      "opera-stair-train",
+      "onsen-rise-embrace"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 56.5,
+    "spicy_index_rank": 16,
+    "spicy_index_status": "preliminary",
+    "freedom": 96.7,
+    "freedom_rank": 7,
+    "freedom_status": "scored",
+    "freedom_runs": 19,
+    "tested_between": [
+     "2026-09-15",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "partial": {
+      "points": 16.67,
+      "max": 20,
+      "runs": 3,
+      "renders": 2
+     },
+     "nude": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "explicit": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "extreme": {
+      "points": 20,
+      "max": 20,
+      "runs": 7,
+      "renders": 7
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 2.16,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/seedance-2-5-spicy/report"
+   }
+  },
+  {
+   "name": "Seedance 2.5",
+   "page": "seedance-2-5",
+   "provider": "ByteDance",
+   "modality": "video",
+   "spicy": false,
+   "sort": 144,
+   "endpoints": [
+    {
+     "model": "bytedance/seedance-2.5/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.1234,
+     "unit": "per_second",
+     "variant": "generate_audio=false;resolution=480p",
+     "durations": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "480p",
+      "720p",
+      "1080p"
+     ],
+     "summary": "Pin the first frame to a still you already have, then say only what happens next.",
+     "examples": [
+      "frozen-glass-burst",
+      "sunken-ballroom",
+      "suspended-wave",
+      "snow-glass-spin"
+     ]
+    },
+    {
+     "model": "bytedance/seedance-2.5/reference-to-video",
+     "task": "reference-to-video",
+     "tier": "unrestricted",
+     "from": 0.1234,
+     "unit": "per_second",
+     "variant": "generate_audio=false;resolution=480p;with_video=false",
+     "durations": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "480p",
+      "720p",
+      "1080p"
+     ],
+     "summary": "Hand it up to 30 stills, 10 clips and 10 audio tracks, and cast the shot from your own material.",
+     "examples": [
+      "thirty-boards-trailer",
+      "three-angle-character",
+      "beat-matched-cut"
+     ]
+    },
+    {
+     "model": "bytedance/seedance-2.5/text-to-video",
+     "task": "text-to-video",
+     "tier": "unrestricted",
+     "from": 0.1234,
+     "unit": "per_second",
+     "variant": "generate_audio=false;resolution=480p",
+     "durations": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "480p",
+      "720p",
+      "1080p"
+     ],
+     "summary": "Write the shot and get 4–30 seconds at up to 1080p, with sound rendered against the picture.",
+     "examples": [
+      "last-train-fills-up",
+      "jazz-bar-whisper",
+      "dawn-macro-breath",
+      "laundromat-3am",
+      "night-train-press"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 69.5,
+    "spicy_index_rank": 9,
+    "spicy_index_status": "preliminary",
+    "freedom": 80.9,
+    "freedom_rank": 26,
+    "freedom_status": "scored",
+    "freedom_runs": 36,
+    "tested_between": [
+     "2026-09-14",
+     "2026-09-24"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 60,
+      "max": 60,
+      "runs": 9,
+      "renders": 9
+     },
+     "partial": {
+      "points": 60,
+      "max": 60,
+      "runs": 9,
+      "renders": 9
+     },
+     "nude": {
+      "points": 48,
+      "max": 60,
+      "runs": 6,
+      "renders": 6
+     },
+     "explicit": {
+      "points": 56.67,
+      "max": 60,
+      "runs": 9,
+      "renders": 8
+     },
+     "extreme": {
+      "points": 18,
+      "max": 60,
+      "runs": 3,
+      "renders": 3
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 1.3865,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/seedance-2-5/report"
+   }
+  },
+  {
+   "name": "Seedance 2.0 Spicy",
+   "page": "seedance-2-0-spicy",
+   "provider": "ByteDance",
+   "modality": "video",
+   "spicy": true,
+   "sort": 141,
+   "endpoints": [
+    {
+     "model": "bytedance/seedance-2.0-spicy/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.114,
+     "unit": "per_second",
+     "variant": "generate_audio=false;resolution=480p",
+     "durations": [
+      4,
+      15
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "480p",
+      "720p",
+      "1080p",
+      "4k"
+     ],
+     "summary": "Uncensored image-to-video: hand it the opening frame and get 4–15 seconds back at up to 4K.",
+     "examples": [
+      "velvet-curtain-turn-4k",
+      "fogged-mirror-lean",
+      "darkroom-safelight",
+      "library-ladder-dust",
+      "velvet-spiral-turn"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 61.5,
+    "spicy_index_rank": 14,
+    "spicy_index_status": "preliminary",
+    "freedom": 93.3,
+    "freedom_rank": 13,
+    "freedom_status": "scored",
+    "freedom_runs": 19,
+    "tested_between": [
+     "2026-09-15",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "partial": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "nude": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "explicit": {
+      "points": 13.33,
+      "max": 20,
+      "runs": 3,
+      "renders": 1
+     },
+     "extreme": {
+      "points": 20,
+      "max": 20,
+      "runs": 7,
+      "renders": 7
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 1.14,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/seedance-2-0-spicy/report"
+   }
+  },
+  {
+   "name": "Seedance 2.0",
+   "page": "seedance-2-0",
+   "provider": "ByteDance",
+   "modality": "video",
+   "spicy": false,
+   "sort": 140,
+   "endpoints": [
+    {
+     "model": "bytedance/seedance-2.0/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.07,
+     "unit": "per_second",
+     "variant": "generate_audio=false;resolution=480p",
+     "durations": [
+      -1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "480p",
+      "720p",
+      "1080p",
+      "4k"
+     ],
+     "summary": "Pin the first frame to a still you already have, then say only what happens next.",
+     "examples": [
+      "tavern-ice-eye-contact",
+      "storm-forecourt-step-out",
+      "dawn-to-dusk"
+     ]
+    },
+    {
+     "model": "bytedance/seedance-2.0/reference-to-video",
+     "task": "reference-to-video",
+     "tier": "unrestricted",
+     "from": 0.07,
+     "unit": "per_second",
+     "variant": "generate_audio=false;resolution=480p;with_video=false",
+     "durations": [
+      -1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "480p",
+      "720p",
+      "1080p",
+      "4k"
+     ],
+     "summary": "Hand it up to 9 stills, 3 clips and 3 audio tracks, and cast the shot from your own material.",
+     "examples": [
+      "same-suit-three-cities",
+      "character-into-location",
+      "camera-language-match"
+     ]
+    },
+    {
+     "model": "bytedance/seedance-2.0/text-to-video",
+     "task": "text-to-video",
+     "tier": "unrestricted",
+     "from": 0.07,
+     "unit": "per_second",
+     "variant": "generate_audio=false;resolution=480p",
+     "durations": [
+      -1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "480p",
+      "720p",
+      "1080p",
+      "4k"
+     ],
+     "summary": "Write the shot and get 4–15 seconds back at up to 4K, with sound rendered against the picture.",
+     "examples": [
+      "forge-of-giants-4k",
+      "neon-bar-tail",
+      "shore-break-dawn",
+      "neon-subway-ride",
+      "pool-hall-silk-descent"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 81.5,
+    "spicy_index_rank": 1,
+    "spicy_index_status": "preliminary",
+    "freedom": 70.4,
+    "freedom_rank": 30,
+    "freedom_status": "scored",
+    "freedom_runs": 34,
+    "tested_between": [
+     "2026-09-14",
+     "2026-09-24"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 52,
+      "max": 60,
+      "runs": 7,
+      "renders": 7
+     },
+     "partial": {
+      "points": 60,
+      "max": 60,
+      "runs": 9,
+      "renders": 9
+     },
+     "nude": {
+      "points": 48,
+      "max": 60,
+      "runs": 6,
+      "renders": 6
+     },
+     "explicit": {
+      "points": 33.33,
+      "max": 60,
+      "runs": 9,
+      "renders": 1
+     },
+     "extreme": {
+      "points": 18,
+      "max": 60,
+      "runs": 3,
+      "renders": 3
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.76,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/seedance-2-0/report"
+   }
+  },
+  {
+   "name": "Wan 3.0 Prime",
+   "page": "wan-3-0-prime",
+   "provider": "Alibaba",
+   "modality": "video",
+   "spicy": false,
+   "sort": 137,
+   "endpoints": [
+    {
+     "model": "alibaba/wan-3.0-prime/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.0612,
+     "unit": "per_second",
+     "variant": "480p",
+     "durations": [
+      -1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "480p",
+      "720p",
+      "1080p"
+     ],
+     "summary": "Animate an opening frame for 2 to 30 seconds on the Prime render; last_image_url pins the ending.",
+     "examples": [
+      "empty-floor-to-full-house",
+      "sauna-ladle-steam",
+      "beach-gallop-past",
+      "blanket-turn-in"
+     ]
+    },
+    {
+     "model": "alibaba/wan-3.0-prime/reference-to-video",
+     "task": "reference-to-video",
+     "tier": "unrestricted",
+     "from": 0.0612,
+     "unit": "per_second",
+     "variant": "480p",
+     "durations": [
+      -1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "480p",
+      "720p",
+      "1080p"
+     ],
+     "summary": "Hold a face, wardrobe, location or voice across shots with up to ten image, five video and five audio references.",
+     "examples": [
+      "same-anchor-same-voice",
+      "moon-dune-scarf",
+      "motion-style-copy"
+     ]
+    },
+    {
+     "model": "alibaba/wan-3.0-prime/text-to-video",
+     "task": "text-to-video",
+     "tier": "unrestricted",
+     "from": 0.0612,
+     "unit": "per_second",
+     "variant": "480p",
+     "durations": [
+      -1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "480p",
+      "720p",
+      "1080p"
+     ],
+     "summary": "Write the shot and get 2 to 30 seconds back from the Prime render, with audio in the same file.",
+     "examples": [
+      "lighthouse-one-night",
+      "rooftop-golden-hour",
+      "salt-flat-mirror",
+      "recording-booth",
+      "balcony-robe-wind"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 76.5,
+    "spicy_index_rank": 2,
+    "spicy_index_status": "preliminary",
+    "freedom": 78,
+    "freedom_rank": 28,
+    "freedom_status": "scored",
+    "freedom_runs": 36,
+    "tested_between": [
+     "2026-09-16",
+     "2026-09-24"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 60,
+      "max": 60,
+      "runs": 9,
+      "renders": 9
+     },
+     "partial": {
+      "points": 60,
+      "max": 60,
+      "runs": 9,
+      "renders": 9
+     },
+     "nude": {
+      "points": 52,
+      "max": 60,
+      "runs": 7,
+      "renders": 7
+     },
+     "explicit": {
+      "points": 50,
+      "max": 60,
+      "runs": 9,
+      "renders": 6
+     },
+     "extreme": {
+      "points": 12,
+      "max": 60,
+      "runs": 2,
+      "renders": 2
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.63,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/wan-3-0-prime/report"
+   }
+  },
+  {
+   "name": "Wan 3.0",
+   "page": "wan-3-0",
+   "provider": "Alibaba",
+   "modality": "video",
+   "spicy": false,
+   "sort": 134,
+   "endpoints": [
+    {
+     "model": "alibaba/wan-3.0/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.045,
+     "unit": "per_second",
+     "variant": "480p",
+     "durations": [
+      -1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "480p",
+      "720p",
+      "1080p"
+     ],
+     "summary": "Start from an opening frame and direct 2 to 30 seconds of motion; an optional closing frame pins where the shot lands.",
+     "examples": [
+      "tent-dawn-to-dusk",
+      "lingerie-window-turn",
+      "bottle-hero-return",
+      "mirrorball-press"
+     ]
+    },
+    {
+     "model": "alibaba/wan-3.0/reference-to-video",
+     "task": "reference-to-video",
+     "tier": "unrestricted",
+     "from": 0.045,
+     "unit": "per_second",
+     "variant": "480p",
+     "durations": [
+      -1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "480p",
+      "720p",
+      "1080p"
+     ],
+     "summary": "Direct 2 to 30 seconds from up to ten image, five video and five audio references, with an optional written brief.",
+     "examples": [
+      "ten-boards-travel-cut",
+      "character-and-room",
+      "voice-matched-monologue"
+     ]
+    },
+    {
+     "model": "alibaba/wan-3.0/text-to-video",
+     "task": "text-to-video",
+     "tier": "unrestricted",
+     "from": 0.045,
+     "unit": "per_second",
+     "variant": "480p",
+     "durations": [
+      -1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "480p",
+      "720p",
+      "1080p"
+     ],
+     "summary": "Write the shot and get 2 to 30 seconds back with synchronised audio — no source image required.",
+     "examples": [
+      "rain-race-thirty",
+      "first-person-bedside",
+      "armoury-lacing",
+      "drive-in-tailgate"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 76.5,
+    "spicy_index_rank": 2,
+    "spicy_index_status": "preliminary",
+    "freedom": 96,
+    "freedom_rank": 11,
+    "freedom_status": "scored",
+    "freedom_runs": 51,
+    "tested_between": [
+     "2026-09-15",
+     "2026-09-24"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 60,
+      "max": 60,
+      "runs": 9,
+      "renders": 9
+     },
+     "partial": {
+      "points": 60,
+      "max": 60,
+      "runs": 9,
+      "renders": 9
+     },
+     "nude": {
+      "points": 48,
+      "max": 60,
+      "runs": 6,
+      "renders": 6
+     },
+     "explicit": {
+      "points": 60,
+      "max": 60,
+      "runs": 9,
+      "renders": 9
+     },
+     "extreme": {
+      "points": 60,
+      "max": 60,
+      "runs": 18,
+      "renders": 18
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.45,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/wan-3-0/report"
+   }
+  },
+  {
+   "name": "MiniMax H3 Spicy",
+   "page": "minimax-h3-spicy",
+   "provider": "MiniMax",
+   "modality": "video",
+   "spicy": true,
+   "sort": 131,
+   "endpoints": [
+    {
+     "model": "minimax/h3-spicy/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.038,
+     "unit": "per_second",
+     "variant": "480p",
+     "durations": [
+      3,
+      15
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "480p",
+      "540p",
+      "768p",
+      "1080p"
+     ],
+     "summary": "Animate your own opening frame into 3 to 15 seconds at 480p, 540p, 768p or 1080p, with the prompt optional.",
+     "examples": [
+      "steam-room-turn",
+      "neon-window",
+      "pov-glove-tap",
+      "greenhouse-mist",
+      "sauna-shoulder-turn"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 29.5,
+    "spicy_index_rank": 32,
+    "spicy_index_status": "preliminary",
+    "freedom": 97.5,
+    "freedom_rank": 6,
+    "freedom_status": "scored",
+    "freedom_runs": 21,
+    "tested_between": [
+     "2026-09-20",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "partial": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "nude": {
+      "points": 20,
+      "max": 20,
+      "runs": 4,
+      "renders": 4
+     },
+     "explicit": {
+      "points": 17.5,
+      "max": 20,
+      "runs": 4,
+      "renders": 3
+     },
+     "extreme": {
+      "points": 20,
+      "max": 20,
+      "runs": 7,
+      "renders": 7
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.42,
+     "tier": "768p",
+     "note": "no 720p tier; nearest tier 768p",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/minimax-h3-spicy/report"
+   }
+  },
+  {
+   "name": "MiniMax H3",
+   "page": "minimax-h3",
+   "provider": "MiniMax",
+   "modality": "video",
+   "spicy": false,
+   "sort": 130,
+   "endpoints": [
+    {
+     "model": "minimax/h3/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.025,
+     "unit": "per_second",
+     "variant": "480p",
+     "durations": [
+      4,
+      15
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "480p",
+      "768p",
+      "2k"
+     ],
+     "summary": "Start from an approved frame and direct what happens next - the most literal way to get the subject you designed.",
+     "examples": [
+      "cup-then-two-in-one-shirt",
+      "windowsill-turn",
+      "robe-to-doorway"
+     ]
+    },
+    {
+     "model": "minimax/h3/reference-to-video",
+     "task": "reference-to-video",
+     "tier": "unrestricted",
+     "from": 0.025,
+     "unit": "per_second",
+     "variant": "480p",
+     "durations": [
+      4,
+      15
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "480p",
+      "768p",
+      "2k"
+     ],
+     "summary": "Hold a character, a wardrobe and a location steady across shots using up to nine reference images.",
+     "examples": [
+      "red-dress-theatre-three-angles",
+      "character-continuity",
+      "voice-and-room"
+     ]
+    },
+    {
+     "model": "minimax/h3/text-to-video",
+     "task": "text-to-video",
+     "tier": "unrestricted",
+     "from": 0.025,
+     "unit": "per_second",
+     "variant": "480p",
+     "durations": [
+      5,
+      15
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "480p",
+      "768p",
+      "2k"
+     ],
+     "summary": "Write the shot and get 5 to 15 seconds back with sound, at 480p, 768p or 2k across six aspect ratios.",
+     "examples": [
+      "thunder-wheat-field",
+      "noir-window",
+      "curtain-silhouette",
+      "mirror-two-views"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 72.5,
+    "spicy_index_rank": 8,
+    "spicy_index_status": "preliminary",
+    "freedom": 33.3,
+    "freedom_rank": 36,
+    "freedom_status": "scored",
+    "freedom_runs": 14,
+    "tested_between": [
+     "2026-09-14",
+     "2026-09-22"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 16,
+      "max": 60,
+      "runs": 2,
+      "renders": 2
+     },
+     "partial": {
+      "points": 0,
+      "max": 60,
+      "runs": 0,
+      "renders": 0
+     },
+     "nude": {
+      "points": 44,
+      "max": 60,
+      "runs": 5,
+      "renders": 5
+     },
+     "explicit": {
+      "points": 20,
+      "max": 60,
+      "runs": 3,
+      "renders": 3
+     },
+     "extreme": {
+      "points": 20,
+      "max": 60,
+      "runs": 4,
+      "renders": 4
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.185,
+     "tier": "768p",
+     "note": "no 720p tier; nearest tier 768p",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/minimax-h3/report"
+   }
+  },
+  {
+   "name": "MiniMax H3 Singularity LoRA",
+   "page": "minimax-h3-singularity-lora",
+   "provider": "MiniMax",
+   "modality": "video",
+   "spicy": false,
+   "sort": 125,
+   "endpoints": [
+    {
+     "model": "minimax/h3-singularity-lora/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.0625,
+     "unit": "per_second",
+     "variant": "480p",
+     "durations": [
+      3,
+      15
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "480p",
+      "540p",
+      "768p",
+      "1080p"
+     ],
+     "summary": "Image-to-video on the Singularity fine-tune of MiniMax H3, with up to three of your own LoRAs.",
+     "examples": [
+      "rooftop-sword-spin",
+      "underpass-breakdance-vhs"
+     ]
+    },
+    {
+     "model": "minimax/h3-singularity-lora/reference-to-video",
+     "task": "reference-to-video",
+     "tier": "unrestricted",
+     "from": 0.06,
+     "unit": "per_second",
+     "variant": "480p",
+     "durations": [
+      3,
+      15
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "480p",
+      "540p",
+      "768p",
+      "1080p"
+     ],
+     "summary": "Reference-to-video on the Singularity fine-tune of MiniMax H3, with images, clips, audio and your LoRAs.",
+     "examples": [
+      "singer-on-the-stage",
+      "rooftop-sparring"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 72.8,
+    "spicy_index_rank": 7,
+    "spicy_index_status": "preliminary",
+    "freedom": 100,
+    "freedom_rank": 1,
+    "freedom_status": "scored",
+    "freedom_runs": 38,
+    "tested_between": [
+     "2026-09-26",
+     "2026-09-27"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "partial": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "nude": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "explicit": {
+      "points": 40,
+      "max": 40,
+      "runs": 8,
+      "renders": 8
+     },
+     "extreme": {
+      "points": 40,
+      "max": 40,
+      "runs": 12,
+      "renders": 12
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.625,
+     "tier": "768p",
+     "note": "no 720p tier; nearest tier 768p",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/minimax-h3-singularity-lora/report"
+   }
+  },
+  {
+   "name": "LTX 2.5",
+   "page": "ltx-2-5",
+   "provider": "Lightricks",
+   "modality": "video",
+   "spicy": false,
+   "sort": 123,
+   "endpoints": [
+    {
+     "model": "lightricks/ltx-2.5/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.09,
+     "unit": "per_second",
+     "variant": "720p",
+     "durations": [
+      5,
+      20
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "720p",
+      "1080p",
+      "2k",
+      "4k"
+     ],
+     "summary": "Animate an approved frame for 5 to 20 seconds up to 4K, optionally landing on a second frame.",
+     "examples": [
+      "beach-to-bonfire",
+      "candlelit-tub",
+      "deco-pool-backfall",
+      "surf-lift-embrace"
+     ]
+    },
+    {
+     "model": "lightricks/ltx-2.5/text-to-video",
+     "task": "text-to-video",
+     "tier": "unrestricted",
+     "from": 0.09,
+     "unit": "per_second",
+     "variant": "720p",
+     "durations": [
+      5,
+      20
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "720p",
+      "1080p",
+      "2k",
+      "4k"
+     ],
+     "summary": "Write the shot and get one continuous take of 5 to 20 seconds, in 16:9 or 9:16, up to 4K.",
+     "examples": [
+      "arena-gate-to-cages",
+      "opera-staircase",
+      "bedside-pov",
+      "ramen-stall",
+      "copper-tub-candlelight"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 66,
+    "spicy_index_rank": 10,
+    "spicy_index_status": "preliminary",
+    "freedom": 80.3,
+    "freedom_rank": 27,
+    "freedom_status": "scored",
+    "freedom_runs": 24,
+    "tested_between": [
+     "2026-09-16",
+     "2026-09-24"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "partial": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "nude": {
+      "points": 32,
+      "max": 40,
+      "runs": 4,
+      "renders": 4
+     },
+     "explicit": {
+      "points": 36.67,
+      "max": 40,
+      "runs": 6,
+      "renders": 5
+     },
+     "extreme": {
+      "points": 12,
+      "max": 40,
+      "runs": 2,
+      "renders": 2
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.45,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/ltx-2-5/report"
+   }
+  },
+  {
+   "name": "Wan 3.0 Pro Prime",
+   "page": "wan-3-0-pro-prime",
+   "provider": "Alibaba",
+   "modality": "video",
+   "spicy": false,
+   "sort": 121,
+   "endpoints": [
+    {
+     "model": "alibaba/wan-3.0-pro-prime/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.234,
+     "unit": "per_second",
+     "variant": "1080p",
+     "durations": [
+      -1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "1080p",
+      "2k",
+      "4k"
+     ],
+     "summary": "Animate an opening frame at up to 4K for 2 to 30 seconds; last_image_url fixes the ending.",
+     "examples": [
+      "bloom-and-unbuttoned",
+      "neon-alley-slicker",
+      "alley-light-hold",
+      "shirt-drawn-aside"
+     ]
+    },
+    {
+     "model": "alibaba/wan-3.0-pro-prime/reference-to-video",
+     "task": "reference-to-video",
+     "tier": "unrestricted",
+     "from": 0.234,
+     "unit": "per_second",
+     "variant": "1080p",
+     "durations": [
+      -1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "1080p",
+      "2k",
+      "4k"
+     ],
+     "summary": "Lock a face, garment, set, movement or voice with image, video and audio references and render at up to 4K.",
+     "examples": [
+      "dancer-three-stages-4k",
+      "two-character-plates",
+      "set-continuity-4k"
+     ]
+    },
+    {
+     "model": "alibaba/wan-3.0-pro-prime/text-to-video",
+     "task": "text-to-video",
+     "tier": "unrestricted",
+     "from": 0.234,
+     "unit": "per_second",
+     "variant": "1080p",
+     "durations": [
+      -1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "1080p",
+      "2k",
+      "4k"
+     ],
+     "summary": "Write the shot and render it at 1080p, 2K or 4K for 2 to 30 seconds, audio included.",
+     "examples": [
+      "aurora-one-blanket",
+      "crypt-candelabra",
+      "underwater-silk-descent",
+      "night-ferry"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 76.5,
+    "spicy_index_rank": 2,
+    "spicy_index_status": "preliminary",
+    "freedom": 82,
+    "freedom_rank": 24,
+    "freedom_status": "scored",
+    "freedom_runs": 36,
+    "tested_between": [
+     "2026-09-15",
+     "2026-09-24"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 60,
+      "max": 60,
+      "runs": 9,
+      "renders": 9
+     },
+     "partial": {
+      "points": 60,
+      "max": 60,
+      "runs": 9,
+      "renders": 9
+     },
+     "nude": {
+      "points": 48,
+      "max": 60,
+      "runs": 6,
+      "renders": 6
+     },
+     "explicit": {
+      "points": 60,
+      "max": 60,
+      "runs": 9,
+      "renders": 9
+     },
+     "extreme": {
+      "points": 18,
+      "max": 60,
+      "runs": 3,
+      "renders": 3
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 1.17,
+     "tier": "1080p",
+     "note": "no 720p tier; nearest tier 1080p",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/wan-3-0-pro-prime/report"
+   }
+  },
+  {
+   "name": "Wan 3.0 Pro",
+   "page": "wan-3-0-pro",
+   "provider": "Alibaba",
+   "modality": "video",
+   "spicy": false,
+   "sort": 118,
+   "endpoints": [
+    {
+     "model": "alibaba/wan-3.0-pro/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.144,
+     "unit": "per_second",
+     "variant": "1080p",
+     "durations": [
+      -1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "1080p",
+      "2k",
+      "4k"
+     ],
+     "summary": "Animate a high-resolution opening frame at up to 4K; last_image_url pins where the shot lands.",
+     "examples": [
+      "two-to-the-summit",
+      "silk-shoulder-turn",
+      "bottle-hero-return",
+      "steam-robe-shoulders"
+     ]
+    },
+    {
+     "model": "alibaba/wan-3.0-pro/reference-to-video",
+     "task": "reference-to-video",
+     "tier": "unrestricted",
+     "from": 0.144,
+     "unit": "per_second",
+     "variant": "1080p",
+     "durations": [
+      -1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "1080p",
+      "2k",
+      "4k"
+     ],
+     "summary": "Hold a face, garment, set, movement or voice across shots with image, video and audio references, rendered at up to 4K.",
+     "examples": [
+      "same-two-three-times",
+      "face-and-set",
+      "garment-hero-4k"
+     ]
+    },
+    {
+     "model": "alibaba/wan-3.0-pro/text-to-video",
+     "task": "text-to-video",
+     "tier": "unrestricted",
+     "from": 0.144,
+     "unit": "per_second",
+     "variant": "1080p",
+     "durations": [
+      -1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "1080p",
+      "2k",
+      "4k"
+     ],
+     "summary": "Write the shot and render it at 1080p, 2K or 4K for 2 to 30 seconds, with audio in the same file.",
+     "examples": [
+      "runway-fence-couple",
+      "perfume-window-turn",
+      "monochrome-wind-machine",
+      "tattoo-parlour"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 76.5,
+    "spicy_index_rank": 2,
+    "spicy_index_status": "preliminary",
+    "freedom": 82,
+    "freedom_rank": 24,
+    "freedom_status": "scored",
+    "freedom_runs": 36,
+    "tested_between": [
+     "2026-09-15",
+     "2026-09-24"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 60,
+      "max": 60,
+      "runs": 9,
+      "renders": 9
+     },
+     "partial": {
+      "points": 60,
+      "max": 60,
+      "runs": 9,
+      "renders": 9
+     },
+     "nude": {
+      "points": 48,
+      "max": 60,
+      "runs": 6,
+      "renders": 6
+     },
+     "explicit": {
+      "points": 60,
+      "max": 60,
+      "runs": 9,
+      "renders": 9
+     },
+     "extreme": {
+      "points": 18,
+      "max": 60,
+      "runs": 3,
+      "renders": 3
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.72,
+     "tier": "1080p",
+     "note": "no 720p tier; nearest tier 1080p",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/wan-3-0-pro/report"
+   }
+  },
+  {
+   "name": "MiniMax H3 LoRA",
+   "page": "minimax-h3-lora",
+   "provider": "MiniMax",
+   "modality": "video",
+   "spicy": false,
+   "sort": 115,
+   "endpoints": [
+    {
+     "model": "minimax/h3-lora/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.05,
+     "unit": "per_second",
+     "variant": "480p",
+     "durations": [
+      3,
+      15
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "480p",
+      "540p",
+      "768p",
+      "1080p"
+     ],
+     "summary": "Image-to-video on MiniMax H3 with up to three of your own LoRAs; the clip starts from your frame.",
+     "examples": [
+      "hotel-window-dawn",
+      "singer-vhs-performance"
+     ]
+    },
+    {
+     "model": "minimax/h3-lora/reference-to-video",
+     "task": "reference-to-video",
+     "tier": "unrestricted",
+     "from": 0.06,
+     "unit": "per_second",
+     "variant": "480p",
+     "durations": [
+      3,
+      15
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "480p",
+      "540p",
+      "768p",
+      "1080p"
+     ],
+     "summary": "Reference-to-video on MiniMax H3 with your own LoRAs: images, clips and audio in, one shot out.",
+     "examples": [
+      "character-lora-plus-references",
+      "copy-the-spin-from-a-clip"
+     ]
+    },
+    {
+     "model": "minimax/h3-lora/text-to-video",
+     "task": "text-to-video",
+     "tier": "unrestricted",
+     "from": 0.05,
+     "unit": "per_second",
+     "variant": "480p",
+     "durations": [
+      3,
+      15
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "480p",
+      "540p",
+      "768p",
+      "1080p"
+     ],
+     "summary": "Text-to-video on MiniMax H3 with up to three of your own LoRAs, 3 to 15 seconds with sound.",
+     "examples": [
+      "vhs-late-night-diner",
+      "cartoon-1939-rooftop"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 75.2,
+    "spicy_index_rank": 6,
+    "spicy_index_status": "preliminary",
+    "freedom": 98.3,
+    "freedom_rank": 5,
+    "freedom_status": "scored",
+    "freedom_runs": 60,
+    "tested_between": [
+     "2026-09-26",
+     "2026-09-27"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 60,
+      "max": 60,
+      "runs": 9,
+      "renders": 9
+     },
+     "partial": {
+      "points": 60,
+      "max": 60,
+      "runs": 9,
+      "renders": 9
+     },
+     "nude": {
+      "points": 60,
+      "max": 60,
+      "runs": 11,
+      "renders": 11
+     },
+     "explicit": {
+      "points": 55,
+      "max": 60,
+      "runs": 13,
+      "renders": 11
+     },
+     "extreme": {
+      "points": 60,
+      "max": 60,
+      "runs": 18,
+      "renders": 18
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.5,
+     "tier": "768p",
+     "note": "no 720p tier; nearest tier 768p",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/minimax-h3-lora/report"
+   }
+  },
+  {
+   "name": "HappyHorse 1.1",
+   "page": "happyhorse-1-1",
+   "provider": "Alibaba",
+   "modality": "video",
+   "spicy": false,
+   "sort": 112,
+   "endpoints": [
+    {
+     "model": "alibaba/happyhorse-1.1/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.14,
+     "unit": "per_second",
+     "variant": "720p",
+     "durations": [
+      3,
+      15
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "720p",
+      "1080p"
+     ],
+     "summary": "Animate an approved frame for 3 to 15 seconds at up to 1080p - the literal path, with the frame setting the shape.",
+     "examples": [
+      "wasteland-hood-two",
+      "tailgate-turn",
+      "quiet-hold"
+     ]
+    },
+    {
+     "model": "alibaba/happyhorse-1.1/reference-to-video",
+     "task": "reference-to-video",
+     "tier": "unrestricted",
+     "from": 0.14,
+     "unit": "per_second",
+     "variant": "720p",
+     "durations": [
+      3,
+      15
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "720p",
+      "1080p"
+     ],
+     "summary": "Hold a cast, a wardrobe, a vehicle and a location steady with up to nine reference images in one request.",
+     "examples": [
+      "rider-jacket-bike-station",
+      "three-plate-corridor",
+      "product-in-place"
+     ]
+    },
+    {
+     "model": "alibaba/happyhorse-1.1/text-to-video",
+     "task": "text-to-video",
+     "tier": "filtered",
+     "from": 0.14,
+     "unit": "per_second",
+     "variant": "720p",
+     "durations": [
+      3,
+      15
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "720p",
+      "1080p"
+     ],
+     "summary": "Write the shot and pick from nine frames - 3 to 15 seconds at up to 1080p, with generated sound.",
+     "examples": [
+      "rain-hood-convenience",
+      "desert-tailgate",
+      "motel-blinds-boots",
+      "karaoke-room",
+      "sea-walk-wet-slip"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 62.5,
+    "spicy_index_rank": 13,
+    "spicy_index_status": "preliminary",
+    "freedom": 65.1,
+    "freedom_rank": 33,
+    "freedom_status": "scored",
+    "freedom_runs": 39,
+    "tested_between": [
+     "2026-09-25",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 52,
+      "max": 60,
+      "runs": 7,
+      "renders": 7
+     },
+     "partial": {
+      "points": 40,
+      "max": 60,
+      "runs": 6,
+      "renders": 6
+     },
+     "nude": {
+      "points": 53.33,
+      "max": 60,
+      "runs": 9,
+      "renders": 8
+     },
+     "explicit": {
+      "points": 20,
+      "max": 60,
+      "runs": 6,
+      "renders": 3
+     },
+     "extreme": {
+      "points": 30,
+      "max": 60,
+      "runs": 11,
+      "renders": 9
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.7,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/happyhorse-1-1/report"
+   }
+  },
+  {
+   "name": "Seedance 2.0 Mini Spicy",
+   "page": "seedance-2-0-mini-spicy",
+   "provider": "ByteDance",
+   "modality": "video",
+   "spicy": true,
+   "sort": 109,
+   "endpoints": [
+    {
+     "model": "bytedance/seedance-2.0-mini-spicy/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.0387,
+     "unit": "per_second",
+     "variant": "generate_audio=false;resolution=480p",
+     "durations": [
+      4,
+      15
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "480p",
+      "720p"
+     ],
+     "summary": "Uncensored image-to-video on the smallest tier: opening frame in, 4–15 seconds out at up to 720p.",
+     "examples": [
+      "robe-tie-pulled",
+      "fridge-glow-exit",
+      "fogged-shower-streak",
+      "van-door-sunrise"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 44.5,
+    "spicy_index_rank": 25,
+    "spicy_index_status": "preliminary",
+    "freedom": 93.3,
+    "freedom_rank": 13,
+    "freedom_status": "scored",
+    "freedom_runs": 19,
+    "tested_between": [
+     "2026-09-15",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "partial": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "nude": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "explicit": {
+      "points": 13.33,
+      "max": 20,
+      "runs": 3,
+      "renders": 1
+     },
+     "extreme": {
+      "points": 20,
+      "max": 20,
+      "runs": 7,
+      "renders": 7
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.4105,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/seedance-2-0-mini-spicy/report"
+   }
+  },
+  {
+   "name": "Seedance 2.0 Mini",
+   "page": "seedance-2-0-mini",
+   "provider": "ByteDance",
+   "modality": "video",
+   "spicy": false,
+   "sort": 108,
+   "endpoints": [
+    {
+     "model": "bytedance/seedance-2.0-mini/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.0246078,
+     "unit": "per_second",
+     "variant": "generate_audio=false;resolution=480p",
+     "durations": [
+      -1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "480p",
+      "720p"
+     ],
+     "summary": "Pin the first frame to a still you already have, then say only what happens next.",
+     "examples": [
+      "latte-then-robe",
+      "shelf-restock",
+      "season-turn"
+     ]
+    },
+    {
+     "model": "bytedance/seedance-2.0-mini/reference-to-video",
+     "task": "reference-to-video",
+     "tier": "unrestricted",
+     "from": 0.010969,
+     "unit": "per_second",
+     "variant": "generate_audio=false;resolution=480p;with_video=true",
+     "durations": [
+      -1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "480p",
+      "720p"
+     ],
+     "summary": "Hand it up to 9 stills, 3 clips and 3 audio tracks, and cast the shot from your own material.",
+     "examples": [
+      "same-couple-three-angles",
+      "reusable-cast",
+      "pace-from-a-clip"
+     ]
+    },
+    {
+     "model": "bytedance/seedance-2.0-mini/text-to-video",
+     "task": "text-to-video",
+     "tier": "unrestricted",
+     "from": 0.0246078,
+     "unit": "per_second",
+     "variant": "generate_audio=false;resolution=480p",
+     "durations": [
+      -1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "480p",
+      "720p"
+     ],
+     "summary": "Write the shot and get 4–15 seconds back at 480p or 720p, with sound rendered against the picture.",
+     "examples": [
+      "familiar-window-two-woke",
+      "studio-morning",
+      "rain-shopfront-laugh",
+      "snowy-onsen-anime"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 64.5,
+    "spicy_index_rank": 11,
+    "spicy_index_status": "preliminary",
+    "freedom": 64.9,
+    "freedom_rank": 34,
+    "freedom_status": "scored",
+    "freedom_runs": 33,
+    "tested_between": [
+     "2026-09-24",
+     "2026-09-24"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 60,
+      "max": 60,
+      "runs": 9,
+      "renders": 9
+     },
+     "partial": {
+      "points": 56.67,
+      "max": 60,
+      "runs": 9,
+      "renders": 8
+     },
+     "nude": {
+      "points": 48,
+      "max": 60,
+      "runs": 6,
+      "renders": 6
+     },
+     "explicit": {
+      "points": 30,
+      "max": 60,
+      "runs": 9,
+      "renders": 0
+     },
+     "extreme": {
+      "points": 0,
+      "max": 60,
+      "runs": 0,
+      "renders": 0
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.2646,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/seedance-2-0-mini/report"
+   }
+  },
+  {
+   "name": "Wan 2.7 Spicy",
+   "page": "wan-2-7-spicy",
+   "provider": "Alibaba",
+   "modality": "video",
+   "spicy": true,
+   "sort": 105,
+   "endpoints": [
+    {
+     "model": "alibaba/wan-2.7-spicy/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.1235,
+     "unit": "per_second",
+     "variant": "720p",
+     "durations": [
+      2,
+      15
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "720p",
+      "1080p"
+     ],
+     "summary": "Turn one opening frame into 2 to 15 seconds at up to 1080p, with generated audio or a track of your own.",
+     "examples": [
+      "silk-drifts-own-track",
+      "backstage-mirror-turn",
+      "dune-silk-throw",
+      "silk-draught-pull"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 46.5,
+    "spicy_index_rank": 19,
+    "spicy_index_status": "preliminary",
+    "freedom": 100,
+    "freedom_rank": 1,
+    "freedom_status": "scored",
+    "freedom_runs": 19,
+    "tested_between": [
+     "2026-09-15",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "partial": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "nude": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "explicit": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "extreme": {
+      "points": 20,
+      "max": 20,
+      "runs": 7,
+      "renders": 7
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.6175,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/wan-2-7-spicy/report"
+   }
+  },
+  {
+   "name": "LTX 2.3 Spicy",
+   "page": "ltx-2-3-spicy",
+   "provider": "Lightricks",
+   "modality": "video",
+   "spicy": true,
+   "sort": 104,
+   "endpoints": [
+    {
+     "model": "lightricks/ltx-2.3-spicy/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.019,
+     "unit": "per_second",
+     "variant": "480p",
+     "durations": [
+      3,
+      20
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "480p",
+      "720p",
+      "1080p"
+     ],
+     "summary": "Animate one still, uncensored, for up to twenty seconds at 480p, 720p or 1080p, with the prompt optional.",
+     "examples": [
+      "mirror-steam-no-prompt",
+      "rain-car",
+      "hearth-chaise-heels",
+      "drive-in-bonnet",
+      "steam-mirror-towel"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 33.5,
+    "spicy_index_rank": 30,
+    "spicy_index_status": "preliminary",
+    "freedom": 89.2,
+    "freedom_rank": 21,
+    "freedom_status": "scored",
+    "freedom_runs": 19,
+    "tested_between": [
+     "2026-09-15",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "partial": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "nude": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "explicit": {
+      "points": 16.67,
+      "max": 20,
+      "runs": 3,
+      "renders": 2
+     },
+     "extreme": {
+      "points": 12.5,
+      "max": 20,
+      "runs": 7,
+      "renders": 2
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.19,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/ltx-2-3-spicy/report"
+   }
+  },
+  {
+   "name": "LTX 2.3 Spicy LoRA",
+   "page": "ltx-2-3-spicy-lora",
+   "provider": "Lightricks",
+   "modality": "video",
+   "spicy": true,
+   "sort": 103,
+   "endpoints": [
+    {
+     "model": "lightricks/ltx-2.3-spicy-lora/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.0285,
+     "unit": "per_second",
+     "variant": "480p",
+     "durations": [
+      3,
+      20
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "480p",
+      "720p",
+      "1080p"
+     ],
+     "summary": "The LTX 2.3 Spicy contract plus a built-in LoRA preset and up to three per-LoRA strength overrides.",
+     "examples": [
+      "vhs-grain-two-on-bed",
+      "neon-rooftop",
+      "gouache-poster-pier",
+      "strength-sweep"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 34.8,
+    "spicy_index_rank": 29,
+    "spicy_index_status": "preliminary",
+    "freedom": 83.8,
+    "freedom_rank": 23,
+    "freedom_status": "scored",
+    "freedom_runs": 19,
+    "tested_between": [
+     "2026-09-15",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "partial": {
+      "points": 13.33,
+      "max": 20,
+      "runs": 3,
+      "renders": 1
+     },
+     "nude": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "explicit": {
+      "points": 16.67,
+      "max": 20,
+      "runs": 3,
+      "renders": 2
+     },
+     "extreme": {
+      "points": 13.75,
+      "max": 20,
+      "runs": 7,
+      "renders": 3
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.2375,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/ltx-2-3-spicy-lora/report"
+   }
+  },
+  {
+   "name": "Seedance 2.0 Fast Spicy",
+   "page": "seedance-2-0-fast-spicy",
+   "provider": "ByteDance",
+   "modality": "video",
+   "spicy": true,
+   "sort": 102,
+   "endpoints": [
+    {
+     "model": "bytedance/seedance-2.0-fast-spicy/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.081,
+     "unit": "per_second",
+     "variant": "generate_audio=false;resolution=480p",
+     "durations": [
+      4,
+      15
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "480p",
+      "720p"
+     ],
+     "summary": "Uncensored image-to-video on the fast tier: opening frame in, 4–15 seconds out at 720p, sound included.",
+     "examples": [
+      "pool-cannonball-crowd",
+      "balcony-laundry-turn",
+      "pillow-pov-lean",
+      "pool-hall-break"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 44.5,
+    "spicy_index_rank": 25,
+    "spicy_index_status": "preliminary",
+    "freedom": 90,
+    "freedom_rank": 19,
+    "freedom_status": "scored",
+    "freedom_runs": 19,
+    "tested_between": [
+     "2026-09-15",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "partial": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "nude": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "explicit": {
+      "points": 10,
+      "max": 20,
+      "runs": 3,
+      "renders": 0
+     },
+     "extreme": {
+      "points": 20,
+      "max": 20,
+      "runs": 7,
+      "renders": 7
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.871,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/seedance-2-0-fast-spicy/report"
+   }
+  },
+  {
+   "name": "Seedance 2.0 Fast",
+   "page": "seedance-2-0-fast",
+   "provider": "ByteDance",
+   "modality": "video",
+   "spicy": false,
+   "sort": 101,
+   "endpoints": [
+    {
+     "model": "bytedance/seedance-2.0-fast/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.04499712,
+     "unit": "per_second",
+     "variant": "generate_audio=false;resolution=480p",
+     "durations": [
+      -1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "480p",
+      "720p"
+     ],
+     "summary": "Pin the first frame to a still you already have, then say only what happens next.",
+     "examples": [
+      "dominoes-two-hands",
+      "cafe-sign-flip",
+      "before-and-after"
+     ]
+    },
+    {
+     "model": "bytedance/seedance-2.0-fast/reference-to-video",
+     "task": "reference-to-video",
+     "tier": "unrestricted",
+     "from": 0.022539,
+     "unit": "per_second",
+     "variant": "generate_audio=false;resolution=480p;with_video=true",
+     "durations": [
+      -1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "480p",
+      "720p"
+     ],
+     "summary": "Hand it up to 9 stills, 3 clips and 3 audio tracks, and cast the shot from your own material.",
+     "examples": [
+      "skate-crew-own-footage",
+      "product-in-three-angles",
+      "borrowed-camera-move"
+     ]
+    },
+    {
+     "model": "bytedance/seedance-2.0-fast/text-to-video",
+     "task": "text-to-video",
+     "tier": "unrestricted",
+     "from": 0.04499712,
+     "unit": "per_second",
+     "variant": "generate_audio=false;resolution=480p",
+     "durations": [
+      -1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "480p",
+      "720p"
+     ],
+     "summary": "Write the shot and get 4–15 seconds back at 480p or 720p, with sound rendered against the picture.",
+     "examples": [
+      "izakaya-across-the-smoke",
+      "bus-window-selfie",
+      "tunnel-retreat",
+      "high-key-tennis"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 64.5,
+    "spicy_index_rank": 11,
+    "spicy_index_status": "preliminary",
+    "freedom": 68.2,
+    "freedom_rank": 32,
+    "freedom_status": "scored",
+    "freedom_runs": 33,
+    "tested_between": [
+     "2026-09-24",
+     "2026-09-24"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 60,
+      "max": 60,
+      "runs": 9,
+      "renders": 9
+     },
+     "partial": {
+      "points": 60,
+      "max": 60,
+      "runs": 9,
+      "renders": 9
+     },
+     "nude": {
+      "points": 48,
+      "max": 60,
+      "runs": 6,
+      "renders": 6
+     },
+     "explicit": {
+      "points": 36.67,
+      "max": 60,
+      "runs": 9,
+      "renders": 2
+     },
+     "extreme": {
+      "points": 0,
+      "max": 60,
+      "runs": 0,
+      "renders": 0
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.4838,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/seedance-2-0-fast/report"
+   }
+  },
+  {
+   "name": "Vidu Q3 Turbo",
+   "page": "vidu-q3-turbo",
+   "provider": "Vidu",
+   "modality": "video",
+   "spicy": false,
+   "sort": 98,
+   "endpoints": [
+    {
+     "model": "vidu/q3-turbo/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.042,
+     "unit": "per_second",
+     "variant": "540p",
+     "durations": [
+      1,
+      16
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "540p",
+      "720p"
+     ],
+     "summary": "Animate a still into 1 to 16 seconds at 540p or 720p, fast enough to try a dozen movements first.",
+     "examples": [
+      "one-still-push-in",
+      "cafe-curtsy",
+      "bed-end-crawl",
+      "poolside-rise"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 39.5,
+    "spicy_index_rank": 27,
+    "spicy_index_status": "preliminary",
+    "freedom": 93.3,
+    "freedom_rank": 13,
+    "freedom_status": "scored",
+    "freedom_runs": 19,
+    "tested_between": [
+     "2026-09-16",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "partial": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "nude": {
+      "points": 20,
+      "max": 20,
+      "runs": 4,
+      "renders": 4
+     },
+     "explicit": {
+      "points": 13.33,
+      "max": 20,
+      "runs": 3,
+      "renders": 1
+     },
+     "extreme": {
+      "points": 20,
+      "max": 20,
+      "runs": 6,
+      "renders": 6
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.33,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/vidu-q3-turbo/report"
+   }
+  },
+  {
+   "name": "Vidu Q3 Spicy",
+   "page": "vidu-q3-spicy",
+   "provider": "Vidu",
+   "modality": "video",
+   "spicy": true,
+   "sort": 97,
+   "endpoints": [
+    {
+     "model": "vidu/q3-spicy/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.0665,
+     "unit": "per_second",
+     "variant": "540p",
+     "durations": [
+      1,
+      16
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "540p",
+      "720p",
+      "1080p"
+     ],
+     "summary": "Animate your own still into 1 to 16 seconds at up to 1080p, with the prompt optional.",
+     "examples": [
+      "wet-hair-close-no-prompt",
+      "ryokan-pour",
+      "booth-heel-drop",
+      "wheel-and-hands",
+      "wet-hair-lift-gaze"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 46.5,
+    "spicy_index_rank": 19,
+    "spicy_index_status": "preliminary",
+    "freedom": 96.7,
+    "freedom_rank": 7,
+    "freedom_status": "scored",
+    "freedom_runs": 19,
+    "tested_between": [
+     "2026-09-15",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "partial": {
+      "points": 16.67,
+      "max": 20,
+      "runs": 3,
+      "renders": 2
+     },
+     "nude": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "explicit": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "extreme": {
+      "points": 20,
+      "max": 20,
+      "runs": 7,
+      "renders": 7
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.7125,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/vidu-q3-spicy/report"
+   }
+  },
+  {
+   "name": "Vidu Q3",
+   "page": "vidu-q3",
+   "provider": "Vidu",
+   "modality": "video",
+   "spicy": false,
+   "sort": 96,
+   "endpoints": [
+    {
+     "model": "vidu/q3/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.07,
+     "unit": "per_second",
+     "variant": "540p",
+     "durations": [
+      1,
+      16
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "540p",
+      "720p",
+      "1080p"
+     ],
+     "summary": "Animate an opening frame into 1 to 16 seconds at up to 1080p - the route that follows your image literally.",
+     "examples": [
+      "blinds-light-two-bodies",
+      "clifftop-gust",
+      "high-key-morning-fall",
+      "blind-light-reach"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 46.5,
+    "spicy_index_rank": 19,
+    "spicy_index_status": "preliminary",
+    "freedom": 93.3,
+    "freedom_rank": 13,
+    "freedom_status": "scored",
+    "freedom_runs": 19,
+    "tested_between": [
+     "2026-09-14",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "partial": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "nude": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "explicit": {
+      "points": 13.33,
+      "max": 20,
+      "runs": 3,
+      "renders": 1
+     },
+     "extreme": {
+      "points": 20,
+      "max": 20,
+      "runs": 7,
+      "renders": 7
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.75,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/vidu-q3/report"
+   }
+  },
+  {
+   "name": "Vidu Q3 Pro",
+   "page": "vidu-q3-pro",
+   "provider": "Vidu",
+   "modality": "video",
+   "spicy": false,
+   "sort": 95,
+   "endpoints": [
+    {
+     "model": "vidu/q3-pro/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.054,
+     "unit": "per_second",
+     "variant": "540p",
+     "durations": [
+      1,
+      16
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "540p"
+     ],
+     "summary": "Animate an opening frame into 1 to 16 seconds of 540p video, with sound generated in the same pass.",
+     "examples": [
+      "dwarf-forge-sparks",
+      "stage-frame",
+      "vertical-deliverable"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 36.5,
+    "spicy_index_rank": 28,
+    "spicy_index_status": "preliminary",
+    "freedom": 93.3,
+    "freedom_rank": 13,
+    "freedom_status": "scored",
+    "freedom_runs": 19,
+    "tested_between": [
+     "2026-09-16",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "partial": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "nude": {
+      "points": 20,
+      "max": 20,
+      "runs": 4,
+      "renders": 4
+     },
+     "explicit": {
+      "points": 13.33,
+      "max": 20,
+      "runs": 3,
+      "renders": 1
+     },
+     "extreme": {
+      "points": 20,
+      "max": 20,
+      "runs": 6,
+      "renders": 6
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.27,
+     "tier": "540p",
+     "note": "no 720p tier; nearest tier 540p",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/vidu-q3-pro/report"
+   }
+  },
+  {
+   "name": "Seedance 1.5 Pro Spicy",
+   "page": "seedance-1-5-pro-spicy",
+   "provider": "ByteDance",
+   "modality": "video",
+   "spicy": true,
+   "sort": 94,
+   "endpoints": [
+    {
+     "model": "bytedance/seedance-1.5-pro-spicy/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.012,
+     "unit": "per_second",
+     "variant": "generate_audio=false;resolution=480p",
+     "durations": [
+      4,
+      12
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "480p",
+      "720p",
+      "1080p"
+     ],
+     "summary": "Uncensored image-to-video with a camera lock: opening frame in, 4–12 still-framed seconds out.",
+     "examples": [
+      "silk-breathing-locked",
+      "locked-hotel-sheets",
+      "stocking-and-heel",
+      "tail-sweep-arc"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 48.5,
+    "spicy_index_rank": 17,
+    "spicy_index_status": "preliminary",
+    "freedom": 96.7,
+    "freedom_rank": 7,
+    "freedom_status": "scored",
+    "freedom_runs": 19,
+    "tested_between": [
+     "2026-09-15",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "partial": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "nude": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "explicit": {
+      "points": 16.67,
+      "max": 20,
+      "runs": 3,
+      "renders": 2
+     },
+     "extreme": {
+      "points": 20,
+      "max": 20,
+      "runs": 7,
+      "renders": 7
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.13,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/seedance-1-5-pro-spicy/report"
+   }
+  },
+  {
+   "name": "Seedance 1.5 Pro",
+   "page": "seedance-1-5-pro",
+   "provider": "ByteDance",
+   "modality": "video",
+   "spicy": false,
+   "sort": 93,
+   "endpoints": [
+    {
+     "model": "bytedance/seedance-1.5-pro/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.0112,
+     "unit": "per_second",
+     "variant": "generate_audio=false;resolution=480p",
+     "durations": [
+      4,
+      12
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "480p",
+      "720p",
+      "1080p"
+     ],
+     "summary": "Pin the first frame to a still you already have, lock the camera, and animate only the subject.",
+     "examples": [
+      "heavy-bag-locked-camera",
+      "snow-onsen-sink",
+      "first-to-last-still"
+     ]
+    },
+    {
+     "model": "bytedance/seedance-1.5-pro/text-to-video",
+     "task": "text-to-video",
+     "tier": "unrestricted",
+     "from": 0.0112,
+     "unit": "per_second",
+     "variant": "generate_audio=false;resolution=480p",
+     "durations": [
+      4,
+      12
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "480p",
+      "720p",
+      "1080p"
+     ],
+     "summary": "Write the shot, lock the camera if you need to, and get 4–12 seconds back with sound.",
+     "examples": [
+      "seance-candle-bare-feet",
+      "locked-hotel-wide",
+      "candlelit-vanity",
+      "rehearsal-orbit"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 46,
+    "spicy_index_rank": 23,
+    "spicy_index_status": "preliminary",
+    "freedom": 90,
+    "freedom_rank": 19,
+    "freedom_status": "scored",
+    "freedom_runs": 36,
+    "tested_between": [
+     "2026-09-25",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "partial": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "nude": {
+      "points": 36.67,
+      "max": 40,
+      "runs": 6,
+      "renders": 5
+     },
+     "explicit": {
+      "points": 23.33,
+      "max": 40,
+      "runs": 6,
+      "renders": 1
+     },
+     "extreme": {
+      "points": 40,
+      "max": 40,
+      "runs": 12,
+      "renders": 12
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.1135,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/seedance-1-5-pro/report"
+   }
+  },
+  {
+   "name": "Wan 2.6 Flash",
+   "page": "wan-2-6-flash",
+   "provider": "Alibaba",
+   "modality": "video",
+   "spicy": false,
+   "sort": 91,
+   "endpoints": [
+    {
+     "model": "alibaba/wan-2.6-flash/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.0225,
+     "unit": "per_second",
+     "variant": "720p",
+     "durations": [
+      5,
+      10,
+      15
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "720p",
+      "1080p"
+     ],
+     "summary": "Turn one opening frame into exactly 5, 10 or 15 seconds on the faster, lower-cost Wan 2.6 tier, as one take or several shots.",
+     "examples": [
+      "three-angles-one-scene",
+      "evening-apartment-story",
+      "serum-bottle-drop"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 31.5,
+    "spicy_index_rank": 31,
+    "spicy_index_status": "preliminary",
+    "freedom": 100,
+    "freedom_rank": 1,
+    "freedom_status": "scored",
+    "freedom_runs": 19,
+    "tested_between": [
+     "2026-09-16",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "partial": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "nude": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "explicit": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "extreme": {
+      "points": 20,
+      "max": 20,
+      "runs": 7,
+      "renders": 7
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.1125,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/wan-2-6-flash/report"
+   }
+  },
+  {
+   "name": "Wan 2.6 Spicy",
+   "page": "wan-2-6-spicy",
+   "provider": "Alibaba",
+   "modality": "video",
+   "spicy": true,
+   "sort": 90,
+   "endpoints": [
+    {
+     "model": "alibaba/wan-2.6-spicy/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.095,
+     "unit": "per_second",
+     "variant": "720p",
+     "durations": [
+      5,
+      10,
+      15
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "720p",
+      "1080p"
+     ],
+     "summary": "Turn one opening frame into exactly 5, 10 or 15 seconds at 720p or 1080p, uncensored.",
+     "examples": [
+      "bathtub-knees-steam",
+      "pool-rise",
+      "slatted-light-pov",
+      "green-tub-turn-in"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 46.5,
+    "spicy_index_rank": 19,
+    "spicy_index_status": "preliminary",
+    "freedom": 96.7,
+    "freedom_rank": 7,
+    "freedom_status": "scored",
+    "freedom_runs": 19,
+    "tested_between": [
+     "2026-09-15",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "partial": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "nude": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "explicit": {
+      "points": 16.67,
+      "max": 20,
+      "runs": 3,
+      "renders": 2
+     },
+     "extreme": {
+      "points": 20,
+      "max": 20,
+      "runs": 7,
+      "renders": 7
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.475,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/wan-2-6-spicy/report"
+   }
+  },
+  {
+   "name": "Wan 2.6",
+   "page": "wan-2-6",
+   "provider": "Alibaba",
+   "modality": "video",
+   "spicy": false,
+   "sort": 89,
+   "endpoints": [
+    {
+     "model": "alibaba/wan-2.6/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.09,
+     "unit": "per_second",
+     "variant": "720p",
+     "durations": [
+      5,
+      10,
+      15
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "720p",
+      "1080p"
+     ],
+     "summary": "Turn one opening frame into exactly 5, 10 or 15 seconds with sound, as one take or several shots.",
+     "examples": [
+      "kitchen-three-shots",
+      "evening-apartment-story",
+      "serum-bottle-drop",
+      "counter-slide-approach"
+     ]
+    },
+    {
+     "model": "alibaba/wan-2.6/reference-to-video",
+     "task": "reference-to-video",
+     "tier": "filtered",
+     "from": 0.065,
+     "unit": "per_second",
+     "variant": "720p",
+     "durations": [
+      2,
+      10
+     ],
+     "duration_kind": "range",
+     "resolutions": [
+      "720p",
+      "1080p"
+     ],
+     "summary": "Cast people, animals or objects from up to three short clips into a new scene of 2 to 10 seconds.",
+     "examples": [
+      "cast-three-clips",
+      "bottle-new-set"
+     ]
+    },
+    {
+     "model": "alibaba/wan-2.6/text-to-video",
+     "task": "text-to-video",
+     "tier": "unrestricted",
+     "from": 0.09,
+     "unit": "per_second",
+     "variant": "720p",
+     "durations": [
+      5,
+      10,
+      15
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "720p",
+      "1080p"
+     ],
+     "summary": "Turn a written shot or a numbered shot list into exactly 5, 10 or 15 seconds with sound, at 720p or 1080p.",
+     "examples": [
+      "numbered-shot-list",
+      "harbour-rain-single",
+      "bakery-morning-multi",
+      "rain-car-climb-over"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 58.5,
+    "spicy_index_rank": 15,
+    "spicy_index_status": "preliminary",
+    "freedom": 8.7,
+    "freedom_rank": 37,
+    "freedom_status": "scored",
+    "freedom_runs": 5,
+    "tested_between": [
+     "2026-09-14",
+     "2026-09-17"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 0,
+      "max": 60,
+      "runs": 0,
+      "renders": 0
+     },
+     "partial": {
+      "points": 0,
+      "max": 60,
+      "runs": 0,
+      "renders": 0
+     },
+     "nude": {
+      "points": 0,
+      "max": 60,
+      "runs": 1,
+      "renders": 0
+     },
+     "explicit": {
+      "points": 12,
+      "max": 60,
+      "runs": 1,
+      "renders": 1
+     },
+     "extreme": {
+      "points": 14,
+      "max": 60,
+      "runs": 3,
+      "renders": 3
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.45,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/wan-2-6/report"
+   }
+  },
+  {
+   "name": "Wan 2.5",
+   "page": "wan-2-5",
+   "provider": "Alibaba",
+   "modality": "video",
+   "spicy": false,
+   "sort": 86,
+   "endpoints": [
+    {
+     "model": "alibaba/wan-2.5/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.045,
+     "unit": "per_second",
+     "variant": "480p",
+     "durations": [
+      5,
+      10
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "480p",
+      "720p",
+      "1080p"
+     ],
+     "summary": "Animate one opening frame into exactly 5 or 10 seconds with sound, at up to 1080p.",
+     "examples": [
+      "two-under-one-umbrella",
+      "serum-bottle-turn",
+      "slip-dress-turn"
+     ]
+    },
+    {
+     "model": "alibaba/wan-2.5/text-to-video",
+     "task": "text-to-video",
+     "tier": "unrestricted",
+     "from": 0.045,
+     "unit": "per_second",
+     "variant": "480p",
+     "durations": [
+      5,
+      10
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "480p",
+      "720p",
+      "1080p"
+     ],
+     "summary": "Turn a written shot into exactly 5 or 10 seconds with sound, at up to 1080p.",
+     "examples": [
+      "sax-solo-ten-seconds",
+      "harbour-dawn-swim",
+      "record-shop-vertical",
+      "dressing-room-robe"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 46,
+    "spicy_index_rank": 23,
+    "spicy_index_status": "preliminary",
+    "freedom": 99,
+    "freedom_rank": 4,
+    "freedom_status": "scored",
+    "freedom_runs": 39,
+    "tested_between": [
+     "2026-09-16",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "partial": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "nude": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "explicit": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "extreme": {
+      "points": 38,
+      "max": 40,
+      "runs": 15,
+      "renders": 13
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.45,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/wan-2-5/report"
+   }
+  },
+  {
+   "name": "Wan 2.2 Spicy",
+   "page": "wan-2-2-spicy",
+   "provider": "Alibaba",
+   "modality": "video",
+   "spicy": true,
+   "sort": 83,
+   "endpoints": [
+    {
+     "model": "alibaba/wan-2.2-spicy/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.019,
+     "unit": "per_second",
+     "variant": "480p",
+     "durations": [
+      5,
+      8
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "480p",
+      "720p"
+     ],
+     "summary": "Turn an opening frame into exactly five or eight seconds, with an optional closing frame to pin the ending.",
+     "examples": [
+      "wolf-turn-and-look-back",
+      "gym-dawn-breath",
+      "one-pace-closer"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 23.5,
+    "spicy_index_rank": 34,
+    "spicy_index_status": "preliminary",
+    "freedom": 91.2,
+    "freedom_rank": 18,
+    "freedom_status": "scored",
+    "freedom_runs": 19,
+    "tested_between": [
+     "2026-09-16",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "partial": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "nude": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "explicit": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "extreme": {
+      "points": 11.25,
+      "max": 20,
+      "runs": 7,
+      "renders": 1
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.19,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/wan-2-2-spicy/report"
+   }
+  },
+  {
+   "name": "Wan 2.2 Spicy LoRA",
+   "page": "wan-2-2-spicy-lora",
+   "provider": "Alibaba",
+   "modality": "video",
+   "spicy": true,
+   "sort": 82,
+   "endpoints": [
+    {
+     "model": "alibaba/wan-2.2-spicy-lora/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.024,
+     "unit": "per_second",
+     "variant": "480p",
+     "durations": [
+      5,
+      8
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "480p",
+      "720p"
+     ],
+     "summary": "Uncensored image-to-video with up to three of your own LoRAs, five or eight seconds per call.",
+     "examples": [
+      "three-loras-stacked",
+      "candlelit-crypt",
+      "airbrush-pool-hold"
+     ]
+    },
+    {
+     "model": "alibaba/wan-2.2-spicy-lora/video-extend",
+     "task": "video-extend",
+     "tier": "unrestricted",
+     "from": 0.038,
+     "unit": "per_second",
+     "variant": "480p",
+     "durations": [
+      5,
+      8
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "480p",
+      "720p"
+     ],
+     "summary": "Continue an existing clip for another five or eight seconds with the same LoRAs attached.",
+     "examples": [
+      "extend-the-stack",
+      "tail-rise-continue",
+      "closing-hold"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 25,
+    "spicy_index_rank": 33,
+    "spicy_index_status": "preliminary",
+    "freedom": 74.8,
+    "freedom_rank": 29,
+    "freedom_status": "scored",
+    "freedom_runs": 26,
+    "tested_between": [
+     "2026-09-14",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 32,
+      "max": 40,
+      "runs": 4,
+      "renders": 4
+     },
+     "partial": {
+      "points": 32,
+      "max": 40,
+      "runs": 4,
+      "renders": 4
+     },
+     "nude": {
+      "points": 32,
+      "max": 40,
+      "runs": 4,
+      "renders": 4
+     },
+     "explicit": {
+      "points": 22,
+      "max": 40,
+      "runs": 4,
+      "renders": 1
+     },
+     "extreme": {
+      "points": 31.5,
+      "max": 40,
+      "runs": 10,
+      "renders": 8
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.24,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/wan-2-2-spicy-lora/report"
+   }
+  },
+  {
+   "name": "Wan 2.2 LoRA",
+   "page": "wan-2-2-lora",
+   "provider": "Alibaba",
+   "modality": "video",
+   "spicy": false,
+   "sort": 80,
+   "endpoints": [
+    {
+     "model": "alibaba/wan-2.2-lora/image-to-video",
+     "task": "image-to-video",
+     "tier": "unrestricted",
+     "from": 0.024,
+     "unit": "per_second",
+     "variant": "480p",
+     "durations": [
+      5,
+      8
+     ],
+     "duration_kind": "enum",
+     "resolutions": [
+      "480p",
+      "720p"
+     ],
+     "summary": "Image-to-video with your own LoRAs, aimed at the high-noise pass, the low-noise pass or both.",
+     "examples": [
+      "film-grain-low-noise-only",
+      "rooftop-walk",
+      "ink-brush-sword-form"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 22.5,
+    "spicy_index_rank": 35,
+    "spicy_index_status": "preliminary",
+    "freedom": 88.8,
+    "freedom_rank": 22,
+    "freedom_status": "scored",
+    "freedom_runs": 19,
+    "tested_between": [
+     "2026-09-15",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "partial": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "nude": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "explicit": {
+      "points": 13.33,
+      "max": 20,
+      "runs": 3,
+      "renders": 1
+     },
+     "extreme": {
+      "points": 15.42,
+      "max": 20,
+      "runs": 7,
+      "renders": 4
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_5s_clip",
+     "usd": 0.24,
+     "tier": "720p",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/wan-2-2-lora/report"
+   }
+  },
+  {
+   "name": "Qwen Image 2.1",
+   "page": "qwen-image-2-1",
+   "provider": "Alibaba",
+   "modality": "image",
+   "spicy": false,
+   "sort": 77,
+   "endpoints": [
+    {
+     "model": "alibaba/qwen-image-2.1/edit",
+     "task": "edit",
+     "tier": "unrestricted",
+     "from": 0.036,
+     "unit": "per_image",
+     "variant": "1k",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": [
+      "1k",
+      "1.5k",
+      "2k"
+     ],
+     "summary": "Edit from one to ten reference images with an uncensored instruction, returning a single frame at 1k, 1.5k or 2k.",
+     "examples": [
+      "slats-slip-dress",
+      "dawn-to-candlelight",
+      "two-references-one-chaise"
+     ]
+    },
+    {
+     "model": "alibaba/qwen-image-2.1/text-to-image",
+     "task": "text-to-image",
+     "tier": "unrestricted",
+     "from": 0.024,
+     "unit": "per_image",
+     "variant": "1k",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": [
+      "1k",
+      "1.5k",
+      "2k"
+     ],
+     "summary": "Turn a 5,000-character brief into one image per call, uncensored, at 1k, 1.5k or 2k across fifteen aspect ratios.",
+     "examples": [
+      "boudoir-window-slats",
+      "lace-and-lamplight",
+      "two-figures-one-sheet"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 73,
+    "spicy_index_rank": 4,
+    "spicy_index_status": "preliminary",
+    "freedom": 96.3,
+    "freedom_rank": 7,
+    "freedom_status": "scored",
+    "freedom_runs": 34,
+    "tested_between": [
+     "2026-09-22",
+     "2026-09-24"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "partial": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "nude": {
+      "points": 36,
+      "max": 40,
+      "runs": 5,
+      "renders": 5
+     },
+     "explicit": {
+      "points": 36.67,
+      "max": 40,
+      "runs": 6,
+      "renders": 5
+     },
+     "extreme": {
+      "points": 40,
+      "max": 40,
+      "runs": 12,
+      "renders": 12
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_image",
+     "usd": 0.024,
+     "tier": "1k",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/qwen-image-2-1/report"
+   }
+  },
+  {
+   "name": "Qwen Image 2.1 LoRA",
+   "page": "qwen-image-2-1-lora",
+   "provider": "Alibaba",
+   "modality": "image",
+   "spicy": false,
+   "sort": 75,
+   "endpoints": [
+    {
+     "model": "alibaba/qwen-image-2.1-lora/edit",
+     "task": "edit",
+     "tier": "unrestricted",
+     "from": 0.042,
+     "unit": "per_image",
+     "variant": "1k",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": [
+      "1k",
+      "1.5k",
+      "2k"
+     ],
+     "summary": "Edit one to ten reference images with up to three of your own LoRA weights loaded, uncensored on both sides.",
+     "examples": [
+      "boudoir-into-anime",
+      "relight-the-chaise",
+      "next-scene-after-dark"
+     ]
+    },
+    {
+     "model": "alibaba/qwen-image-2.1-lora/text-to-image",
+     "task": "text-to-image",
+     "tier": "unrestricted",
+     "from": 0.03,
+     "unit": "per_image",
+     "variant": "1k",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": [
+      "1k",
+      "1.5k",
+      "2k"
+     ],
+     "summary": "Generate with up to three of your own LoRA weights loaded, each with its own strength, on an uncensored base model.",
+     "examples": [
+      "anime-boudoir-lora",
+      "watercolor-lace-lora",
+      "impressionist-bathers-lora",
+      "two-weights-stacked"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 80.5,
+    "spicy_index_rank": 1,
+    "spicy_index_status": "preliminary",
+    "freedom": 92,
+    "freedom_rank": 14,
+    "freedom_status": "scored",
+    "freedom_runs": 32,
+    "tested_between": [
+     "2026-09-21",
+     "2026-09-24"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "partial": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "nude": {
+      "points": 24,
+      "max": 40,
+      "runs": 2,
+      "renders": 2
+     },
+     "explicit": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "extreme": {
+      "points": 40,
+      "max": 40,
+      "runs": 12,
+      "renders": 12
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_image",
+     "usd": 0.03,
+     "tier": "1k",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/qwen-image-2-1-lora/report"
+   }
+  },
+  {
+   "name": "MiniMax H3 Image LoRA",
+   "page": "minimax-h3-image-lora",
+   "provider": "MiniMax",
+   "modality": "image",
+   "spicy": false,
+   "sort": 73,
+   "endpoints": [
+    {
+     "model": "minimax/h3-image-lora/edit",
+     "task": "edit",
+     "tier": "unrestricted",
+     "from": 0.054,
+     "unit": "per_image",
+     "variant": "1k",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": [
+      "1k",
+      "2k"
+     ],
+     "summary": "Image editing on MiniMax H3 with up to nine references and three of your own LoRAs.",
+     "examples": [
+      "same-woman-new-scene",
+      "singer-as-1939-cartoon"
+     ]
+    },
+    {
+     "model": "minimax/h3-image-lora/text-to-image",
+     "task": "text-to-image",
+     "tier": "unrestricted",
+     "from": 0.042,
+     "unit": "per_image",
+     "variant": "1k",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": [
+      "1k",
+      "2k"
+     ],
+     "summary": "Text-to-image on MiniMax H3 with up to three of your own LoRAs, 1k or 2k.",
+     "examples": [
+      "vhs-still-doorway",
+      "hotel-window-dawn-still"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 74.5,
+    "spicy_index_rank": 2,
+    "spicy_index_status": "preliminary",
+    "freedom": 100,
+    "freedom_rank": 1,
+    "freedom_status": "scored",
+    "freedom_runs": 38,
+    "tested_between": [
+     "2026-09-26",
+     "2026-09-27"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "partial": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "nude": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "explicit": {
+      "points": 40,
+      "max": 40,
+      "runs": 8,
+      "renders": 8
+     },
+     "extreme": {
+      "points": 40,
+      "max": 40,
+      "runs": 12,
+      "renders": 12
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_image",
+     "usd": 0.042,
+     "tier": "1k",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/minimax-h3-image-lora/report"
+   }
+  },
+  {
+   "name": "Qwen Image 3.0 Pro",
+   "page": "qwen-image-3-0-pro",
+   "provider": "Alibaba",
+   "modality": "image",
+   "spicy": false,
+   "sort": 71,
+   "endpoints": [
+    {
+     "model": "alibaba/qwen-image-3.0-pro/edit",
+     "task": "edit",
+     "tier": "unrestricted",
+     "from": 0.04,
+     "unit": "per_image",
+     "variant": "1k",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": [
+      "1k",
+      "2k"
+     ],
+     "summary": "Edit a delivered frame or merge up to three references, including retyping cover lines without redrawing the picture.",
+     "examples": [
+      "retype-the-tagline",
+      "cover-line-swap",
+      "wardrobe-and-set",
+      "watch-into-print-ad"
+     ]
+    },
+    {
+     "model": "alibaba/qwen-image-3.0-pro/text-to-image",
+     "task": "text-to-image",
+     "tier": "unrestricted",
+     "from": 0.04,
+     "unit": "per_image",
+     "variant": "1k",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": [
+      "1k",
+      "2k"
+     ],
+     "summary": "Render delivery-grade frames from a prompt, with several short strings of type staying legible at the 2k tier.",
+     "examples": [
+      "arena-poster-three-lines",
+      "perfume-spread-tagline",
+      "magazine-cover",
+      "motel-vacancy",
+      "morning-note-pov",
+      "private-eye-door-glass",
+      "salt-crystal-fragrance"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 56,
+    "spicy_index_rank": 9,
+    "spicy_index_status": "preliminary",
+    "freedom": 98,
+    "freedom_rank": 5,
+    "freedom_status": "scored",
+    "freedom_runs": 35,
+    "tested_between": [
+     "2026-09-23",
+     "2026-09-24"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "partial": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "nude": {
+      "points": 36,
+      "max": 40,
+      "runs": 5,
+      "renders": 5
+     },
+     "explicit": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "extreme": {
+      "points": 40,
+      "max": 40,
+      "runs": 12,
+      "renders": 12
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_image",
+     "usd": 0.04,
+     "tier": "1k",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/qwen-image-3-0-pro/report"
+   }
+  },
+  {
+   "name": "Qwen Image 3.0",
+   "page": "qwen-image-3-0",
+   "provider": "Alibaba",
+   "modality": "image",
+   "spicy": false,
+   "sort": 69,
+   "endpoints": [
+    {
+     "model": "alibaba/qwen-image-3.0/edit",
+     "task": "edit",
+     "tier": "unrestricted",
+     "from": 0.03,
+     "unit": "per_image",
+     "variant": "1k",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": [
+      "1k",
+      "2k"
+     ],
+     "summary": "Edit or merge one to three reference images with a prompt, including retyping text that is already in the frame.",
+     "examples": [
+      "merge-person-and-storefront",
+      "lipstick-on-glass",
+      "two-reference-merge",
+      "fingertip-on-fog",
+      "noodle-stall-sign"
+     ]
+    },
+    {
+     "model": "alibaba/qwen-image-3.0/text-to-image",
+     "task": "text-to-image",
+     "tier": "unrestricted",
+     "from": 0.03,
+     "unit": "per_image",
+     "variant": "1k",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": [
+      "1k",
+      "2k"
+     ],
+     "summary": "Render a prompt into one image per call, with quoted signage and headlines coming back readable at the 2k tier.",
+     "examples": [
+      "tavern-sign-shave",
+      "magic-shop-window-chalk",
+      "door-hanger",
+      "glasshouse-editorial",
+      "handwritten-note",
+      "balcony-letter-under-lemon",
+      "ringed-planet-travel-poster",
+      "bookshop-cat-on-duty"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 56,
+    "spicy_index_rank": 9,
+    "spicy_index_status": "preliminary",
+    "freedom": 96,
+    "freedom_rank": 8,
+    "freedom_status": "scored",
+    "freedom_runs": 34,
+    "tested_between": [
+     "2026-09-24",
+     "2026-09-24"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "partial": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "nude": {
+      "points": 32,
+      "max": 40,
+      "runs": 4,
+      "renders": 4
+     },
+     "explicit": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "extreme": {
+      "points": 40,
+      "max": 40,
+      "runs": 12,
+      "renders": 12
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_image",
+     "usd": 0.03,
+     "tier": "1k",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/qwen-image-3-0/report"
+   }
+  },
+  {
+   "name": "Seedream 5.0 Pro",
+   "page": "seedream-5-0-pro",
+   "provider": "ByteDance",
+   "modality": "image",
+   "spicy": false,
+   "sort": 67,
+   "endpoints": [
+    {
+     "model": "bytedance/seedream-5.0-pro/edit",
+     "task": "edit",
+     "tier": "unrestricted",
+     "from": 0.036,
+     "unit": "per_image",
+     "variant": "1k",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": [
+      "1k",
+      "2k"
+     ],
+     "summary": "Edit or assemble from one to ten reference images with a single prompt that names what each source contributes.",
+     "examples": [
+      "face-gown-ballroom",
+      "subject-into-set",
+      "colour-to-monochrome-relight",
+      "cabin-winter-to-midsummer",
+      "suit-to-snowbound-station"
+     ]
+    },
+    {
+     "model": "bytedance/seedream-5.0-pro/text-to-image",
+     "task": "text-to-image",
+     "tier": "unrestricted",
+     "from": 0.036,
+     "unit": "per_image",
+     "variant": "1k",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": [
+      "1k",
+      "2k"
+     ],
+     "summary": "Render one delivery-grade frame from a brief of up to 5,000 characters, at 1k or 2k and in any of fifteen aspect ratios.",
+     "examples": [
+      "bathhouse-marble-two",
+      "champagne-satin-back",
+      "wet-beauty-portrait",
+      "candlelit-bedroom",
+      "last-ferry-two-benches",
+      "dance-hall-glance",
+      "dinner-after-closing",
+      "deco-staircase-shadow",
+      "candle-profile-rain-window",
+      "knight-and-white-stag",
+      "dust-storm-tailoring"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 73,
+    "spicy_index_rank": 4,
+    "spicy_index_status": "preliminary",
+    "freedom": 94.3,
+    "freedom_rank": 12,
+    "freedom_status": "scored",
+    "freedom_runs": 34,
+    "tested_between": [
+     "2026-09-14",
+     "2026-09-24"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "partial": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "nude": {
+      "points": 32,
+      "max": 40,
+      "runs": 4,
+      "renders": 4
+     },
+     "explicit": {
+      "points": 36.67,
+      "max": 40,
+      "runs": 6,
+      "renders": 5
+     },
+     "extreme": {
+      "points": 40,
+      "max": 40,
+      "runs": 12,
+      "renders": 12
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_image",
+     "usd": 0.036,
+     "tier": "1k",
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/seedream-5-0-pro/report"
+   }
+  },
+  {
+   "name": "Qwen Image Edit Spicy",
+   "page": "qwen-image-spicy-edit",
+   "provider": "Alibaba",
+   "modality": "image",
+   "spicy": true,
+   "sort": 65,
+   "endpoints": [
+    {
+     "model": "alibaba/qwen-image-spicy-edit/edit",
+     "task": "edit",
+     "tier": "unrestricted",
+     "from": 0.038,
+     "unit": "per_image",
+     "variant": "",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": null,
+     "summary": "Send one source image and one instruction; get the change back with no mask, no strength dial and no content filter.",
+     "examples": [
+      "example-boudoir-i2i",
+      "lingerie-and-hanger",
+      "latex-and-neon",
+      "midday-to-candlelit"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 14,
+    "spicy_index_rank": 22,
+    "spicy_index_status": "preliminary",
+    "freedom": 96,
+    "freedom_rank": 8,
+    "freedom_status": "scored",
+    "freedom_runs": 18,
+    "tested_between": [
+     "2026-09-15",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 16,
+      "max": 20,
+      "runs": 2,
+      "renders": 2
+     },
+     "partial": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "nude": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "explicit": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "extreme": {
+      "points": 20,
+      "max": 20,
+      "runs": 7,
+      "renders": 7
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_image",
+     "usd": 0.038,
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/qwen-image-spicy-edit/report"
+   }
+  },
+  {
+   "name": "Seedream 5.0 Lite",
+   "page": "seedream-5-0-lite",
+   "provider": "ByteDance",
+   "modality": "image",
+   "spicy": false,
+   "sort": 57,
+   "endpoints": [
+    {
+     "model": "bytedance/seedream-5.0-lite/edit",
+     "task": "edit",
+     "tier": "unrestricted",
+     "from": 0.0345,
+     "unit": "per_image",
+     "variant": "",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": null,
+     "summary": "Edit or assemble from one to ten references and deliver the result at an explicit width*height preset.",
+     "examples": [
+      "two-refs-poster-size",
+      "costume-restyle",
+      "keep-her-swap-everything"
+     ]
+    },
+    {
+     "model": "bytedance/seedream-5.0-lite/text-to-image",
+     "task": "text-to-image",
+     "tier": "unrestricted",
+     "from": 0.0345,
+     "unit": "per_image",
+     "variant": "",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": null,
+     "summary": "Generate one image at a named 2K width*height preset, from a brief of 3 to 3,000 characters.",
+     "examples": [
+      "siren-rocks-strip",
+      "bunny-croupier",
+      "mirrored-elevator",
+      "airbrush-synthwave",
+      "split-season-oak",
+      "tiger-and-firefly",
+      "lantern-fox-bus-stop",
+      "silver-silk-rooftop"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 73,
+    "spicy_index_rank": 4,
+    "spicy_index_status": "preliminary",
+    "freedom": 96,
+    "freedom_rank": 8,
+    "freedom_status": "scored",
+    "freedom_runs": 34,
+    "tested_between": [
+     "2026-09-24",
+     "2026-09-24"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "partial": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "nude": {
+      "points": 32,
+      "max": 40,
+      "runs": 4,
+      "renders": 4
+     },
+     "explicit": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "extreme": {
+      "points": 40,
+      "max": 40,
+      "runs": 12,
+      "renders": 12
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_image",
+     "usd": 0.0345,
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/seedream-5-0-lite/report"
+   }
+  },
+  {
+   "name": "Qwen Image 2",
+   "page": "alibaba-qwen-image-2",
+   "provider": "Alibaba",
+   "modality": "image",
+   "spicy": false,
+   "sort": 55,
+   "endpoints": [
+    {
+     "model": "alibaba/qwen-image-2/edit",
+     "task": "edit",
+     "tier": "unrestricted",
+     "from": 0.035,
+     "unit": "per_image",
+     "variant": "",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": null,
+     "summary": "Edit one reference image with a prompt and pick the output's aspect ratio; it does not follow the source.",
+     "examples": [
+      "alley-to-widescreen-dawn",
+      "subject-plus-set",
+      "signwriting-edit"
+     ]
+    },
+    {
+     "model": "alibaba/qwen-image-2/text-to-image",
+     "task": "text-to-image",
+     "tier": "unrestricted",
+     "from": 0.035,
+     "unit": "per_image",
+     "variant": "",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": null,
+     "summary": "Generate one image from an 800-character brief in Chinese or English, in any of five aspect ratios.",
+     "examples": [
+      "cyber-alley-bilingual",
+      "midnight-fox-bar",
+      "club-dj-illustration",
+      "do-not-knock-corridor",
+      "lantern-festival-yukata",
+      "brutalist-library-rain",
+      "supper-club-singer"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 34,
+    "spicy_index_rank": 16,
+    "spicy_index_status": "preliminary",
+    "freedom": 96.7,
+    "freedom_rank": 6,
+    "freedom_status": "scored",
+    "freedom_runs": 36,
+    "tested_between": [
+     "2026-09-25",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "partial": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "nude": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "explicit": {
+      "points": 33.33,
+      "max": 40,
+      "runs": 6,
+      "renders": 4
+     },
+     "extreme": {
+      "points": 40,
+      "max": 40,
+      "runs": 12,
+      "renders": 12
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_image",
+     "usd": 0.035,
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/alibaba-qwen-image-2/report"
+   }
+  },
+  {
+   "name": "Qwen Image 2512 LoRA",
+   "page": "qwen-image-2512-lora",
+   "provider": "Alibaba",
+   "modality": "image",
+   "spicy": false,
+   "sort": 53,
+   "endpoints": [
+    {
+     "model": "alibaba/qwen-image-2512-lora/edit",
+     "task": "edit",
+     "tier": "unrestricted",
+     "from": 0.03,
+     "unit": "per_image",
+     "variant": "",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": null,
+     "summary": "Image editing on Qwen-Image-Edit-2511 with one to three sources and your own LoRAs.",
+     "examples": [
+      "new-camera-angle",
+      "anime-to-real"
+     ]
+    },
+    {
+     "model": "alibaba/qwen-image-2512-lora/text-to-image",
+     "task": "text-to-image",
+     "tier": "unrestricted",
+     "from": 0.03,
+     "unit": "per_image",
+     "variant": "",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": null,
+     "summary": "Text-to-image on Qwen-Image-2512 with up to three of your own LoRAs.",
+     "examples": [
+      "storybook-onsen",
+      "watercolor-balcony",
+      "pixel-art-arcade"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 50.5,
+    "spicy_index_rank": 11,
+    "spicy_index_status": "preliminary",
+    "freedom": 92.5,
+    "freedom_rank": 13,
+    "freedom_status": "scored",
+    "freedom_runs": 38,
+    "tested_between": [
+     "2026-09-26",
+     "2026-09-27"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "partial": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "nude": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "explicit": {
+      "points": 25.0,
+      "max": 40,
+      "runs": 8,
+      "renders": 2
+     },
+     "extreme": {
+      "points": 40,
+      "max": 40,
+      "runs": 12,
+      "renders": 12
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_image",
+     "usd": 0.03,
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/qwen-image-2512-lora/report"
+   }
+  },
+  {
+   "name": "Z-Image Spicy Pro",
+   "page": "z-image-spicy-pro",
+   "provider": "Alibaba",
+   "modality": "image",
+   "spicy": true,
+   "sort": 51,
+   "endpoints": [
+    {
+     "model": "alibaba/z-image-spicy-pro/text-to-image",
+     "task": "text-to-image",
+     "tier": "unrestricted",
+     "from": 0.019,
+     "unit": "per_image",
+     "variant": "",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": null,
+     "summary": "Uncensored text-to-image at exact dimensions up to 2560 pixels a side, with the prompt expander off by default.",
+     "examples": [
+      "moon-pool-two-silhouettes",
+      "high-key-pov",
+      "garter-product-still",
+      "full-size-portrait",
+      "backlit-curtain-shadow"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 38,
+    "spicy_index_rank": 15,
+    "spicy_index_status": "preliminary",
+    "freedom": 100,
+    "freedom_rank": 1,
+    "freedom_status": "scored",
+    "freedom_runs": 19,
+    "tested_between": [
+     "2026-09-15",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "partial": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "nude": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "explicit": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "extreme": {
+      "points": 20,
+      "max": 20,
+      "runs": 7,
+      "renders": 7
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_image",
+     "usd": 0.019,
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/z-image-spicy-pro/report"
+   }
+  },
+  {
+   "name": "Z-Image Spicy",
+   "page": "z-image-spicy",
+   "provider": "Alibaba",
+   "modality": "image",
+   "spicy": true,
+   "sort": 50,
+   "endpoints": [
+    {
+     "model": "alibaba/z-image-spicy/text-to-image",
+     "task": "text-to-image",
+     "tier": "unrestricted",
+     "from": 0.01235,
+     "unit": "per_image",
+     "variant": "false",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": null,
+     "summary": "Uncensored text-to-image at exact pixel dimensions, with the prompt expander off unless you switch it on.",
+     "examples": [
+      "leather-studs-low-key",
+      "blind-stripe-boudoir",
+      "fire-escape-dusk",
+      "expanded-one-liner",
+      "own-legs-pov"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 32,
+    "spicy_index_rank": 18,
+    "spicy_index_status": "preliminary",
+    "freedom": 98.8,
+    "freedom_rank": 4,
+    "freedom_status": "scored",
+    "freedom_runs": 19,
+    "tested_between": [
+     "2026-09-15",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "partial": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "nude": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "explicit": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "extreme": {
+      "points": 18.75,
+      "max": 20,
+      "runs": 7,
+      "renders": 6
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_image",
+     "usd": 0.01235,
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/z-image-spicy/report"
+   }
+  },
+  {
+   "name": "Z-Image",
+   "page": "z-image",
+   "provider": "Alibaba",
+   "modality": "image",
+   "spicy": false,
+   "sort": 49,
+   "endpoints": [
+    {
+     "model": "alibaba/z-image-turbo/text-to-image",
+     "task": "text-to-image",
+     "tier": "unrestricted",
+     "from": 0.01,
+     "unit": "per_image",
+     "variant": "",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": null,
+     "summary": "Turn a tight brief into a photoreal frame in roughly a second, in five ratios, delivered as PNG.",
+     "examples": [
+      "skater-mid-air",
+      "gym-mirror-selfie",
+      "motel-pool-lounger",
+      "north-window-portrait",
+      "detective-under-the-el",
+      "umbrella-over-a-stranger",
+      "lantern-keeper-sleeping-dragon",
+      "monolith-highway",
+      "glacier-cave-vaults",
+      "aurora-cabin-frozen-lake",
+      "midnight-ramen-counter",
+      "fox-in-first-snow",
+      "subway-freeze",
+      "watch-in-ice",
+      "android-noodle-counter",
+      "vanity-mirror-before-curtain"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 17,
+    "spicy_index_rank": 21,
+    "spicy_index_status": "preliminary",
+    "freedom": 100,
+    "freedom_rank": 1,
+    "freedom_status": "scored",
+    "freedom_runs": 18,
+    "tested_between": [
+     "2026-09-25",
+     "2026-09-25"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "partial": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "nude": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "explicit": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "extreme": {
+      "points": 20,
+      "max": 20,
+      "runs": 6,
+      "renders": 6
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_image",
+     "usd": 0.01,
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/z-image/report"
+   }
+  },
+  {
+   "name": "Z-Image Turbo LoRA",
+   "page": "z-image-turbo-lora",
+   "provider": "Alibaba",
+   "modality": "image",
+   "spicy": false,
+   "sort": 48,
+   "endpoints": [
+    {
+     "model": "alibaba/z-image-turbo-lora/edit",
+     "task": "edit",
+     "tier": "unrestricted",
+     "from": 0.012,
+     "unit": "per_image",
+     "variant": "",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": null,
+     "summary": "Restyle an image on Z-Image Turbo with a strength control and up to three LoRAs.",
+     "examples": [
+      "singer-as-oil-painting",
+      "cartoon-to-photo"
+     ]
+    },
+    {
+     "model": "alibaba/z-image-turbo-lora/text-to-image",
+     "task": "text-to-image",
+     "tier": "unrestricted",
+     "from": 0.012,
+     "unit": "per_image",
+     "variant": "",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": null,
+     "summary": "Fast text-to-image on Z-Image Turbo with up to three of your own LoRAs.",
+     "examples": [
+      "realism-rain-window",
+      "classic-painting-chaise",
+      "pixel-art-rooftop-dance"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 46.5,
+    "spicy_index_rank": 12,
+    "spicy_index_status": "preliminary",
+    "freedom": 95,
+    "freedom_rank": 11,
+    "freedom_status": "scored",
+    "freedom_runs": 38,
+    "tested_between": [
+     "2026-09-26",
+     "2026-09-27"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "partial": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "nude": {
+      "points": 40,
+      "max": 40,
+      "runs": 7,
+      "renders": 7
+     },
+     "explicit": {
+      "points": 30,
+      "max": 40,
+      "runs": 7,
+      "renders": 4
+     },
+     "extreme": {
+      "points": 40,
+      "max": 40,
+      "runs": 12,
+      "renders": 12
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_image",
+     "usd": 0.012,
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/z-image-turbo-lora/report"
+   }
+  },
+  {
+   "name": "Seedream 4.0",
+   "page": "seedream-4-0",
+   "provider": "ByteDance",
+   "modality": "image",
+   "spicy": false,
+   "sort": 46,
+   "endpoints": [
+    {
+     "model": "bytedance/seedream-4.0/edit",
+     "task": "edit",
+     "tier": "unrestricted",
+     "from": 0.03,
+     "unit": "per_image",
+     "variant": "",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": null,
+     "summary": "Edit or combine one to ten reference images and deliver the result at one of sixteen width*height presets.",
+     "examples": [
+      "coat-street-person-merge",
+      "keep-her-new-location",
+      "costume-restyle",
+      "noir-still-to-ink-panel"
+     ]
+    },
+    {
+     "model": "bytedance/seedream-4.0/text-to-image",
+     "task": "text-to-image",
+     "tier": "unrestricted",
+     "from": 0.03,
+     "unit": "per_image",
+     "variant": "",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": null,
+     "summary": "Generate one image from a prompt at one of sixteen width*height presets, from 1024*1024 to 4096*2304.",
+     "examples": [
+      "dragon-perch-4k",
+      "window-light-boudoir",
+      "neon-rooftop-wide",
+      "flamenco-dust-spotlight",
+      "linen-shirt-first-light",
+      "glasshouse-moth-orchids"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 74,
+    "spicy_index_rank": 3,
+    "spicy_index_status": "preliminary",
+    "freedom": 74.7,
+    "freedom_rank": 16,
+    "freedom_status": "scored",
+    "freedom_runs": 23,
+    "tested_between": [
+     "2026-09-17",
+     "2026-09-24"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "partial": {
+      "points": 40,
+      "max": 40,
+      "runs": 6,
+      "renders": 6
+     },
+     "nude": {
+      "points": 36,
+      "max": 40,
+      "runs": 5,
+      "renders": 5
+     },
+     "explicit": {
+      "points": 33.34,
+      "max": 40,
+      "runs": 6,
+      "renders": 4
+     },
+     "extreme": {
+      "points": 0,
+      "max": 40,
+      "runs": 0,
+      "renders": 0
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_image",
+     "usd": 0.03,
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/seedream-4-0/report"
+   }
+  },
+  {
+   "name": "Prefect Pony XL",
+   "page": "prefect-pony-xl",
+   "provider": "Prefect",
+   "modality": "image",
+   "spicy": false,
+   "sort": 44,
+   "endpoints": [
+    {
+     "model": "prefect/pony-xl/text-to-image",
+     "task": "text-to-image",
+     "tier": "unrestricted",
+     "from": 0.015,
+     "unit": "per_image",
+     "variant": "",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": null,
+     "summary": "Anime and illustration stills from a Pony XL lineage SDXL checkpoint: tag-style prompts, seven native sizes, optional seed.",
+     "examples": [
+      "example-neon-street",
+      "example-cafe-window",
+      "example-silver-knight",
+      "example-autumn-shrine"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 30,
+    "spicy_index_rank": 19,
+    "spicy_index_status": "preliminary",
+    "freedom": 36,
+    "freedom_rank": 20,
+    "freedom_status": "scored",
+    "freedom_runs": 3,
+    "tested_between": [
+     "2026-09-18",
+     "2026-09-18"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 0,
+      "max": 20,
+      "runs": 0,
+      "renders": 0
+     },
+     "partial": {
+      "points": 12,
+      "max": 20,
+      "runs": 1,
+      "renders": 1
+     },
+     "nude": {
+      "points": 12,
+      "max": 20,
+      "runs": 1,
+      "renders": 1
+     },
+     "explicit": {
+      "points": 12,
+      "max": 20,
+      "runs": 1,
+      "renders": 1
+     },
+     "extreme": {
+      "points": 0,
+      "max": 20,
+      "runs": 0,
+      "renders": 0
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_image",
+     "usd": 0.015,
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/prefect-pony-xl/report"
+   }
+  },
+  {
+   "name": "FLUX.1 Dev LoRA",
+   "page": "flux-1-dev-lora",
+   "provider": "Black Forest Labs",
+   "modality": "image",
+   "spicy": false,
+   "sort": 43,
+   "endpoints": [
+    {
+     "model": "black-forest-labs/flux-1-dev-lora/text-to-image",
+     "task": "text-to-image",
+     "tier": "unrestricted",
+     "from": 0.018,
+     "unit": "per_image",
+     "variant": "",
+     "durations": null,
+     "duration_kind": null,
+     "resolutions": null,
+     "summary": "Text-to-image on FLUX.1 [dev] with up to three of your own LoRAs.",
+     "examples": [
+      "super-realism-diner",
+      "mj-mix-red-gown",
+      "long-toon-umbrella",
+      "xlabs-realism-beach"
+     ]
+    }
+   ],
+   "leaderboard": {
+    "spicy_index": 32.5,
+    "spicy_index_rank": 17,
+    "spicy_index_status": "preliminary",
+    "freedom": 75,
+    "freedom_rank": 15,
+    "freedom_status": "scored",
+    "freedom_runs": 21,
+    "tested_between": [
+     "2026-09-26",
+     "2026-09-27"
+    ],
+    "rungs": {
+     "suggestive": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "partial": {
+      "points": 20,
+      "max": 20,
+      "runs": 3,
+      "renders": 3
+     },
+     "nude": {
+      "points": 10,
+      "max": 20,
+      "runs": 3,
+      "renders": 0
+     },
+     "explicit": {
+      "points": 10,
+      "max": 20,
+      "runs": 6,
+      "renders": 0
+     },
+     "extreme": {
+      "points": 15,
+      "max": 20,
+      "runs": 6,
+      "renders": 3
+     }
+    },
+    "price_5s": {
+     "metric": "usd_per_image",
+     "usd": 0.018,
+     "note": "",
+     "asOf": "2026-09-27"
+    },
+    "report": "https://spicyapi.ai/reviews/flux-1-dev-lora/report"
+   }
+  }
+ ]
+}
