@@ -11,7 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 UTM_BASE = "utm_source=github&utm_medium=repo&utm_campaign=2026-09-nsfw-ai-image-prompts"
-LANGS = ["", "ja", "ko", "fr", "es"]
+LANGS = ["", "ja", "ko", "fr", "es", "ru"]
 LANG = ""          # set per render pass
 I18N: dict = {}    # data/i18n/<lang>.json for the current pass
 TASK_ABBR = {"text-to-image": "T2I", "edit": "Edit"}
